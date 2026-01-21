@@ -64,7 +64,7 @@ id: "NPM::ansi-styles:4.2.1"
 Path excludes define which code is not part of the distributed release artifact(s) for a package, for example, code found in the source repository but only used for building, documenting or testing the code.
 License finding curations are used to fix incorrect scan results, for example, if a wrong license was detected, or if a finding is a false positive.
 
-The entries for path excludes and license finding curations have the same syntax and semantics as in the `ort.yml` file, see [excluding paths](ort-yml.md#excluding-paths) and [curating license findings](ort-yml.md#curating-project-license-findings) for details.
+The entries for path excludes and license finding curations have the same syntax and semantics as in the `ort.yml` file, see [excluding paths](ort-yml.md#excludes-paths) and [curating license findings](ort-yml.md#correcting-project-license-findings) for details.
 
 ```yaml
 id: "An ORT package identifier e.g. Pip::example-package:0.0.1."

@@ -7,7 +7,7 @@ The `license-classifications.yml` file holds a user-defined categorization of li
 The information from the `license-classifications.yml` can be used by the:
 
 * ORT Evaluator: By defining categories like "permissive" or "public domain", policy rules can determine how to handle specific licenses and throw an error, warning or hint policy violations if incompliance is detected.
-* ORT Reporter: Based on their associated categories, the [plain text templates](reporter-templates.md#plain-text-templates) for generating NOTICE files can decide which licenses to include in the generated notice file. Use the `include-in-notice-file` category to mark a license as requiring attribution and include it in generated NOTICE files. Similary, if you want to include a written source code offer for a license, mark it with `include-source-code-offer-in-notice-file`.
+* ORT Reporter: Based on their associated categories, the [plain text templates](reporter-templates.md#generate-plain-text-attribution-notices) for generating NOTICE files can decide which licenses to include in the generated notice file. Use the `include-in-notice-file` category to mark a license as requiring attribution and include it in generated NOTICE files. Similary, if you want to include a written source code offer for a license, mark it with `include-source-code-offer-in-notice-file`.
 
 Users can choose their own license classifications and define their own policy rules and notices templates to achieve desired results. ORT allows complete flexibility in category semantics, meaning licenses can be assigned to multiple, overlapping categories with different interpretations.
 

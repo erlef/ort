@@ -22,7 +22,7 @@ ort report [<options>]
   * [Audi Open Source Diagnostics (AOSD)](https://www.aosd.cloud.audi/help)
     * Version 2.0 (`-f AOSD2.0`)
     * Version 2.1 (`-f AOSD2.1`)
-  * [AsciiDoc Template](../configuration/reporter-templates.md#asciidoc-templates) (`-f AsciiDocTemplate`)
+  * [AsciiDoc Template](../configuration/reporter-templates.md#custom-reports-using-asciidoc-templates) (`-f AsciiDocTemplate`)
     * Customizable with [Apache Freemarker](https://freemarker.apache.org/) templates and [AsciiDoc](https://asciidoc.org/)
     * PDF style customizable with Asciidoctor [PDF themes](https://docs.asciidoctor.org/pdf-converter/latest/theme/)
     * Supports multiple AsciiDoc backends:
