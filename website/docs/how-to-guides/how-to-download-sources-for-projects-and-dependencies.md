@@ -2,10 +2,10 @@
 
 Use ORT to download and archive containing the sources for your project and all its dependencies. This is useful to:
 
-- Meet license obligations: Provide corresponding source code for open source dependencies when required by licenses (for example, GPL).
-- Support security reviews: Scan project and dependency sources for credentials, secrets, or insecure coding patterns.
-- Satisfy regulations: Comply with rules such as the EU Cyber Resilience Act (CRA).
-- Ensure long-term access and business continuity: Keep an archived copy for business continuity, audits, or long-term access.
+* Meet license obligations: Provide corresponding source code for open source dependencies when required by licenses (for example, GPL).
+* Support security reviews: Scan project and dependency sources for credentials, secrets, or insecure coding patterns.
+* Satisfy regulations: Comply with rules such as the EU Cyber Resilience Act (CRA).
+* Ensure long-term access and business continuity: Keep an archived copy for business continuity, audits, or long-term access.
 
 ## Downloading sources
 
@@ -64,9 +64,9 @@ Above command will create ZIP archives in the format `Type-Namespace-Name-Versio
 
 ## Related resources
 
-- Reference
-  - [Analyzer CLI][analyzer]
-  - [Downloader CLI][downloader]
+* Reference
+  * [Analyzer CLI][analyzer]
+  * [Downloader CLI][downloader]
 
 [analyzer]: ../reference/cli/analyzer.md
 [downloader]: ../reference/cli/downloader.md

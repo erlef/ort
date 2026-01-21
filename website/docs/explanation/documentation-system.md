@@ -3,6 +3,7 @@
 ORT documentation is organized using the [Diátaxis framework][diátaxis]. Below we provide a summary of the Diátaxis and why it works well, If you are interested in learning more, we recommend you to visiting the [Diátaxis][diátaxis] site for the full details.
 
 ## Diátaxis framework
+
 The Diátaxis framework was developed over the years by [Daniele Procida][daniele-procida]. It serves as a mental model for organizing and managing documentation in a way that simplifies writing, maintenance, and navigation.
 
 Daniele began developing the system while at Divio, so you may also encounter it referred to as [Divio's The Documentation System][divio-documentation-system].
@@ -12,9 +13,9 @@ It appears that he has drawn significantly from Jacob Kaplan-Moss's Writing Grea
 
 Let's start with these quotes from the [Divio's The Documentation System introduction page](https://docs.divio.com/documentation-system/introduction/#the-problem-it-solves):
 
-> It doesn’t matter how good your product or software project is, because if its documentation is not good enough, people will not use it. Even if they have to use it because they have no choice, without good documentation, they won’t use it effectively or the way you’d like them to.
-
-> Nearly everyone knows that they need good documentation, and most people try to create good documentation. And most people fail. Usually, it’s not because they don’t try hard enough. Usually, it’s because they are not doing it the right way. This system is a way to make your documentation better, not by working harder at it, but by doing it the right way. The right way is the easier way - easier to write, and easier to maintain.
+> It doesn't matter how good your product or software project is, because if its documentation is not good enough, people will not use it. Even if they have to use it because they have no choice, without good documentation, they won't use it effectively or the way you'd like them to.
+>
+> Nearly everyone knows that they need good documentation, and most people try to create good documentation. And most people fail. Usually, it's not because they don't try hard enough. Usually, it's because they are not doing it the right way. This system is a way to make your documentation better, not by working harder at it, but by doing it the right way. The right way is the easier way - easier to write, and easier to maintain.
 
 This is the main reason why we adopted Diátaxis. Writing documentation always seemed like a struggle, and we were looking for a better way. Using this framework has made it much easier and more enjoyable to write ORT's documentation.
 
@@ -24,16 +25,16 @@ The system is founded on the concept that there are four distinct types of docum
 
 The four categories of documentation include [Tutorials][diátaxis-tutorials], [How-to guides][diátaxis-how-to-guides], [Reference][diátaxis-reference], and [Explanation][diátaxis-explanation]. Each type fulfills a specific function, and the purposes are well-defined. Here’s a helpful visual that illustrates the system, which we copied from the [Diátaxis website][diátaxis-expectations-and-guidance]:
 
-| Type            | What They Do               | Answers the Question            | Oriented to        | Purpose                                  | Form                         | Analogy                                |
-|------------------|----------------------------|----------------------------------|--------------------|------------------------------------------|------------------------------|----------------------------------------|
-| Tutorials         | Introduce, educate, lead   | Can you teach me to …?          | Learning            | To provide a learning experience         | A lesson                     | Teaching a child how to cook         |
-| How-to Guides     | Guide                       | How do I …?                     | Goals               | To help achieve a particular goal       | A series of steps            | A recipe in a cookery book            |
-| Reference         | State, describe, inform     | What is …                       | Information         | To describe the machinery                | Dry description              | Information on the back of a food packet |
-| Explanations      | Explain, clarify, discuss   | Why …                           | Understanding       | To illuminate a topic                    | Discursive explanation       | An article on culinary social history  |
+| Type          | What They Do              | Answers the Question   | Oriented to   | Purpose                            | Form                   | Analogy                                  |
+|---------------|---------------------------|------------------------|---------------|------------------------------------|------------------------|------------------------------------------|
+| Tutorials     | Introduce, educate, lead  | Can you teach me to …? | Learning      | To provide a learning experience   | A lesson               | Teaching a child how to cook             |
+| How-to Guides | Guide                     | How do I …?            | Goals         | To help achieve a particular goal  | A series of steps      | A recipe in a cookery book               |
+| Reference     | State, describe, inform   | What is …              | Information   | To describe the machinery          | Dry description        | Information on the back of a food packet |
+| Explanations  | Explain, clarify, discuss | Why …                  | Understanding | To illuminate a topic              | Discursive explanation | An article on culinary social history    |
 
 ## Why four documentation categories?
 
-Without getting too deep into the details (check [here][diátaxis-foundations] for a deep dive), Diátaxis makes the argument that a skill will need to be both **acquired** and then later **applied**. Mastering a skill requires both **action** (practical knowledge) and **cognition** (theoretical knowledge).
+Without getting too deep into the details (check the [Diátaxis Foundations][diátaxis-foundations] for a deep dive), Diátaxis makes the argument that a skill will need to be both **acquired** and then later **applied**. Mastering a skill requires both **action** (practical knowledge) and **cognition** (theoretical knowledge).
 Depending on the way the user is trying to improve their skills, they will require various types of documentation, see table below copied from [Diataxis Foundations].
 
 | Need           | Addressed In     | The User                   | The Documentation    |
@@ -68,12 +69,12 @@ You can easily see how each type of documentation shares some of the same roles.
 
 ## Related resources
 
-- [Writing Great Documentation: What to Write by Jacob Kaplan-Moss](https://jacobian.org/2009/nov/10/what-to-write/) - The original inspiration for Diátaxis
-- [What nobody tells you about documentation (video)](https://pyvideo.org/pycon-au-2017/what-nobody-tells-you-about-documentation.html) - Daniele Procida's talk on the system
-- [Documentation as a way to build Community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community) - A blog post on why organized documentation is important
-- Examples
-  - [Django Documentation](https://django.readthedocs.io/en/stable/index.html#how-the-documentation-is-organized)
-  - [Pytest Documentation](https://docs.pytest.org/en/stable/)
+* [Writing Great Documentation: What to Write by Jacob Kaplan-Moss](https://jacobian.org/2009/nov/10/what-to-write/) - The original inspiration for Diátaxis
+* [What nobody tells you about documentation (video)](https://pyvideo.org/pycon-au-2017/what-nobody-tells-you-about-documentation.html) - Daniele Procida's talk on the system
+* [Documentation as a way to build Community](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community) - A blog post on why organized documentation is important
+* Examples
+  * [Django Documentation](https://django.readthedocs.io/en/stable/index.html#how-the-documentation-is-organized)
+  * [Pytest Documentation](https://docs.pytest.org/en/stable/)
 
 [daniele-procida]: https://vurt.org/
 [diátaxis]: https://diataxis.fr/

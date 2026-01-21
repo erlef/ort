@@ -25,7 +25,7 @@ docker run --rm \
 Here's what each part does:
 
 | Option | Description |
-|--------|-------------|
+| ------ | ----------- |
 | `-v "$(pwd)/todo_list_rust":/workspace` | Mounts the project directory into the container |
 | `-v "$(pwd)/ort-config":/home/ort/.ort/config` | Mounts the ORT configuration directory |
 | `-v "$(pwd)/ort-output":/ort-output` | Mounts the output directory |
@@ -68,9 +68,9 @@ Unresolved issues: 0 errors, 0 warnings, 0 hints.
 
 Key takeaways from this output:
 
-- ORT detected a `Cargo.toml` file and used the **Cargo** plugin to analyze it
-- It found **1 project** (our todo_list application) and **11 packages** (dependencies)
-- There were **no issues** - the analysis completed successfully
+* ORT detected a `Cargo.toml` file and used the **Cargo** plugin to analyze it
+* It found **1 project** (our todo_list application) and **11 packages** (dependencies)
+* There were **no issues** - the analysis completed successfully
 
 ## Understanding the result file
 
@@ -139,12 +139,12 @@ Each dependency is listed with its metadata:
 
 For each package, ORT captures for its metadata:
 
-- **Identifier** (`id`) - A unique identifier in the format `Type::Name:Version`
-- **Package URL** (`purl`) - A [standardized package identifier][purl]
-- **Authors** - Who (legally) wrote the package (not always the same as the people who contributed to the package)
-- **Declared licenses** - What declared license(s) are
-- **Source artifact** - Where to download the source code artifact
-- **VCS information** - What the location is of the code source repository (possibly includes tag or filepath)
+* **Identifier** (`id`) - A unique identifier in the format `Type::Name:Version`
+* **Package URL** (`purl`) - A [standardized package identifier][purl]
+* **Authors** - Who (legally) wrote the package (not always the same as the people who contributed to the package)
+* **Declared licenses** - What declared license(s) are
+* **Source artifact** - Where to download the source code artifact
+* **VCS information** - What the location is of the code source repository (possibly includes tag or filepath)
 
 This metadata is used by subsequent ORT steps to download sources, scan for copyrights/licenses, and check for vulnerabilities.
 
@@ -154,11 +154,11 @@ The Analyzer produced a complete snapshot of the project's dependencies as a lar
 
 ## Related resources
 
-- How-to guides
-  -  [How to exclude dirs, files, or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
-- Reference
-  - [Analyzer CLI][analyzer]
-  - [Package curations - correct package metadata](../../reference/configuration/package-curations.md)
+* How-to guides
+  * [How to exclude dirs, files, or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
+* Reference
+  * [Analyzer CLI][analyzer]
+  * [Package curations - correct package metadata](../../reference/configuration/package-curations.md)
 
 [analyzer]: ../../reference/cli/analyzer.md
 [purl]: https://github.com/package-url/purl-spec

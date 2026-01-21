@@ -13,20 +13,20 @@ ort advise [<options>]
 
 ## Output options
 
-- `-o`, `--output-dir=<value>` - The directory to write the ORT result file with advisor results to.
-- `-f`, `--output-formats=(JSON|YAML)` - The list of output formats to be used for the ORT result file(s). (default: YAML)
+* `-o`, `--output-dir=<value>` - The directory to write the ORT result file with advisor results to.
+* `-f`, `--output-formats=(JSON|YAML)` - The list of output formats to be used for the ORT result file(s). (default: YAML)
 
 ## Configuration options
 
-- `--resolutions-file=<value>` - A file containing issue and rule violation resolutions. (default: ~/.ort/config/resolutions.yml)
+* `--resolutions-file=<value>` - A file containing issue and rule violation resolutions. (default: ~/.ort/config/resolutions.yml)
 
 ## Options
 
-- `-i`, `--ort-file=<value>` - An ORT result file with an analyzer result to use.
-- `-l`, `--label=<value>` - Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
-- `-a`, `--advisors=<value>` - The comma-separated advisors to use, any of [BlackDuck, OSSIndex, OSV, VulnerableCode].
-- `--skip-excluded` - Do not check excluded projects or packages. (deprecated)
-- `-h`, `--help` - Show this message and exit.
+* `-i`, `--ort-file=<value>` - An ORT result file with an analyzer result to use.
+* `-l`, `--label=<value>` - Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
+* `-a`, `--advisors=<value>` - The comma-separated advisors to use, any of [BlackDuck, OSSIndex, OSV, VulnerableCode].
+* `--skip-excluded` - Do not check excluded projects or packages. (deprecated)
+* `-h`, `--help` - Show this message and exit.
 
 ## Advisors configuration file formats
 
@@ -96,17 +96,15 @@ ort:
 
 To enable this provider, run the *ORT Advisor* with the `-a VulnerableCode` option.
 
-
 ## Related resources
 
-- Code
-  - [plugins/commands/advisor/src/main/kotlin/AdviseCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/advisor/src/main/kotlin/AdviseCommand.kt)
-  - [plugins/advisors/black-duck](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/black-duck)
-  - [plugins/advisors/oss-index](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/oss-index)
-  - [plugins/advisors/osv](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/osv)
-  - [plugins/advisors/vulnerable-code](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/vulnerable-code)
-- How-to guides
-  - [How to check and remediate vulnerabilities in dependencies](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
+* Code
+  * [plugins/commands/advisor/src/main/kotlin/AdviseCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/advisor/src/main/kotlin/AdviseCommand.kt)
+  * [plugins/advisors/black-duck](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/black-duck)
+  * [plugins/advisors/oss-index](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/oss-index)
+  * [plugins/advisors/osv](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/osv)
+  * [plugins/advisors/vulnerable-code](https://github.com/oss-review-toolkit/ort/tree/main/plugins/advisors/vulnerable-code)
+* How-to guides
+  * [How to check and remediate vulnerabilities in dependencies](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
 
-[ORT Analyzer]: analyzer.md
 [reference-yml]: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/resources/reference.yml

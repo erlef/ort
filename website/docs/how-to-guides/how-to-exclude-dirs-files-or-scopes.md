@@ -67,18 +67,17 @@ excludes:
 
 ## Related resources
 
-- Examples
-  - [The .ort.yml of the ORT project](https://github.com/oss-review-toolkit/ort/blob/main/.ort.yml)
-  - [The .ort.yml of the Elixir project](https://github.com/elixir-lang/elixir/blob/main/.ort.yml)
-- Reference
-  - [Analyzer CLI][analyzer]
-  - [Package configurations][package-configurations]
-  - [Repository configuration (.ort.yml)][ort-yml]
-  - [Scanner CLI][scanner]
+* Examples
+  * [The .ort.yml of the ORT project](https://github.com/oss-review-toolkit/ort/blob/main/.ort.yml)
+  * [The .ort.yml of the Elixir project](https://github.com/elixir-lang/elixir/blob/main/.ort.yml)
+* Reference
+  * [Analyzer CLI][analyzer]
+  * [Package configurations][package-configurations]
+  * [Repository configuration (.ort.yml)][ort-yml]
+  * [Scanner CLI][scanner]
 
 [analyzer]: ../reference/cli/analyzer.md
 [ort-yml]: ../reference/configuration/ort-yml.md
-[ort-yml-excludes]: ../reference/configuration/ort-yml.md#excludes
 [ort-yml-path-excludes]: ../reference/configuration/ort-yml.md#excludes-paths
 [ort-yml-scope-excludes]: ../reference/configuration/ort-yml.md#excluding-scopes
 [ort-yml-skip-excluded]: ../reference/configuration/ort-yml.md#excludes-and-file-scanning-results

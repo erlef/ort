@@ -4,8 +4,8 @@ The items below can be configured by adding an `.ort.yml` file to the root of a 
 All configurations in this file apply only to the context of this project.
 Usually, the global context is preferred for an increased degree of automation, and local configurations should only be done if there are good reasons.
 
-* [excludes](#excludes) - Mark [files, directories](#excluding-paths) or [package manager scopes](#excluding-scopes) as not included in released artifacts.
-* [includes](#includes) - Mark [files, directories](#including-paths) as included in released artifacts.
+* [excludes](#excludes) - Mark [files, directories](#excludes-paths) or [package manager scopes](#excluding-scopes) as not included in released artifacts.
+* [includes](#includes) - Mark [files, directories](#path-includes) as included in released artifacts.
 * [curations](#curations) - Overwrite package metadata, set a concluded license, or correct license findings in the project.
 * [package configurations](#package-configurations) - Define path excludes or correct license findings in dependencies.
 * [license choices](#license-choices) - Select a license for packages which offer a license choice.
@@ -59,8 +59,8 @@ excludes:
 To be able to mark why a part of project is excluded, each exclude must include an explanation.
 The explanation consists of:
 
-- `reason` - must be selected from a predefined list of options.
-- `comment` - free text that provides an optional explanation.
+* `reason` - must be selected from a predefined list of options.
+* `comment` - free text that provides an optional explanation.
 
 #### Excludes paths
 
@@ -159,8 +159,8 @@ Includes can be used to define which parts of the software project are distribut
 To be able to show why a part is included, each include must have an explanation.
 The explanation consists of:
 
-- `reason` - must be selected from a predefined list of options.
-- `comment` - free text that provides an optional explanation.
+* `reason` - must be selected from a predefined list of options.
+* `comment` - free text that provides an optional explanation.
 
 #### Path includes
 
@@ -211,8 +211,8 @@ This means that if a file is matched by both includes and excludes, it will be e
 
 Use a package curations to:
 
-- Correct package metadata such as declared license or the location of the source code repository or sources artifact.
-- Overwrite scanner findings to correct identified licenses for specific project file(s).
+* Correct package metadata such as declared license or the location of the source code repository or sources artifact.
+* Overwrite scanner findings to correct identified licenses for specific project file(s).
 
 To correct license findings detected in dependencies, use global [package configurations](package-configurations.md) instead.
 
@@ -322,9 +322,9 @@ curations:
 
 Use a package configuration to:
 
-- Mark files and directories as not included in released artifacts.
+* Mark files and directories as not included in released artifacts.
   Use it to make clear that license findings in documentation or tests in a package sources do not apply to the release (binary) artifact which is a dependency in your project.
-- Overwrite scanner findings to correct identified licenses for a specific file(s) present in a dependency sources or code repository.
+* Overwrite scanner findings to correct identified licenses for a specific file(s) present in a dependency sources or code repository.
 
 ### Package configurations file format
 
@@ -454,9 +454,9 @@ license_choices:
 
 Use a snippet choice to:
 
-- Select a snippet as the origin of a code snippet found in the project source code, disregarding all other snippets for that location.
-  - [ORT Scanner](../cli/scanner.md) supported snippet scanners, like [FossID] and [ScanOSS], may return multiple matches for the same piece of code within your project, so it’s necessary to choose the correct finding.
-- Mark all snippets for a given source location in the project code repository as false positives.
+* Select a snippet as the origin of a code snippet found in the project source code, disregarding all other snippets for that location.
+  * [ORT Scanner](../cli/scanner.md) supported snippet scanners, like [FossID] and [ScanOSS], may return multiple matches for the same piece of code within your project, so it’s necessary to choose the correct finding.
+* Mark all snippets for a given source location in the project code repository as false positives.
 
 ### Snippet choice file format
 
@@ -494,16 +494,16 @@ Resolutions allow you to *resolve* issues, policy rule violations or vulnerabili
 
 Use a resolution to:
 
-- Mark tool issues as resolved, typically in cases of:
-  - license scanner detection timeouts
-  - unavailable package sources
-- Mark policy rule violations as resolved when the policy requires:
-  - confirmation that a dependency was not modified or is dynamically linked
-  - verification that a license was acquired for proprietary software
-- Mark detected vulnerabilities as resolved for false positives, such as:
-  - unreachable or non-executable code linked to a known vulnerability
-  - invalid matched vulnerabilities
-  - orphaned packages or those declared end-of-life that will not be fixed
+* Mark tool issues as resolved, typically in cases of:
+  * license scanner detection timeouts
+  * unavailable package sources
+* Mark policy rule violations as resolved when the policy requires:
+  * confirmation that a dependency was not modified or is dynamically linked
+  * verification that a license was acquired for proprietary software
+* Mark detected vulnerabilities as resolved for false positives, such as:
+  * unreachable or non-executable code linked to a known vulnerability
+  * invalid matched vulnerabilities
+  * orphaned packages or those declared end-of-life that will not be fixed
 
 Resolutions are only taken into account by the [ORT Reporter](../cli/reporter.md), while the [ORT Analyzer](../cli/analyzer.md) and [ORT Scanner](../cli/scanner.md) ignore them. If a resolution is not project-specific, add it to [resolutions.yml](resolutions.md) so that it is applied to each scan.
 
@@ -514,11 +514,11 @@ To resolve a license policy rule violation, either add a local `license_findings
 
 A resolution addresses specific issues, violations, or vulnerabilities through the regular expression specified in the `message`. Each resolution must include an explanation to clarify its acceptability, comprising:
 
-- `reason` - an identifier selected from a predefined list of options either a
-  - [IssueResolutionReason][issueResolutionReason] for tool issue resolutions,
-  - [RuleViolationResolutionReason][RuleViolationResolutionReason] for policy violation resolutions or,
-  - [VulnerabilityResolutionReason][VulnerabilityResolutionReason] for security vulnerability resolutions.
-- `comment` - free text, providing an explanation and optionally a link to further information.
+* `reason` - an identifier selected from a predefined list of options either a
+  * [IssueResolutionReason][issueResolutionReason] for tool issue resolutions,
+  * [RuleViolationResolutionReason][RuleViolationResolutionReason] for policy violation resolutions or,
+  * [VulnerabilityResolutionReason][VulnerabilityResolutionReason] for security vulnerability resolutions.
+* `comment` - free text, providing an explanation and optionally a link to further information.
 
 The code below shows the structure of `resolutions` in the `.ort.yml` file:
 
@@ -565,37 +565,37 @@ resolutions:
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/config/IssueResolutionReason.kt][IssueResolutionReason]
-  - [model/src/main/kotlin/config/LicenseFindingCuration.kt][LicenseFindingCuration]
-  - [model/src/main/kotlin/config/LicenseFindingCurationReason.kt][LicenseFindingCurationReason]
-  - [model/src/main/kotlin/config/PathExcludeReason.kt][PathExcludeReason]
-  - [model/src/main/kotlin/config/PathIncludeReason.kt][PathIncludeReason]
-  - [model/src/main/kotlin/config/ScopeExcludeReason.kt][ScopeExcludeReason]
-  - [model/src/main/kotlin/config/SnippetChoices.kt][SnippetChoices]
-  - [model/src/main/kotlin/config/snippet/SnippetChoice.kt][SnippetChoice]
-  - [model/src/main/kotlin/config/snippet/SnippetChoiceReason.kt][SnippetChoiceReason]
-  - [model/src/main/kotlin/config/RuleViolationResolutionReason.kt][RuleViolationResolutionReason]
-  - [model/src/main/kotlin/config/VulnerabilityResolutionReason.kt][VulnerabilityResolutionReason]
-  - [model/src/main/kotlin/config/PackageConfiguration.kt][PackageConfiguration]
-  - [model/src/main/kotlin/PackageCurationData.kt][PackageCurationData]
-  - [src/main/kotlin/config/RepositoryConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/RepositoryConfiguration.kt)
-- Examples
-  - [examples/*.ort.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/)
-- How-to guides
-  - [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
-  - [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
-  - [How to address a license policy violation](../../how-to-guides/how-to-address-a-license-policy-violation.md)
-  - [How to check and remediate vulnerabilities in dependencies](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
-  - [How to make license choices](../../how-to-guides/how-to-make-a-license-choice.md)
-  - [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
-- JSON schema
-  - [integrations/schemas/repository-configuration-schema.json](https://github.com/oss-review-toolkit/ort/blob/main/integrations/schemas/repository-configuration-schema.json)
-- Reference
-  - [Analyzer CLI --repository-configuration-file option](../cli/analyzer.md#configuration-options)
-  - [Evaluator CLI --repository-configuration-file option](../cli/evaluator.md#configuration-options)
-  - [Helper CLI --repository-configuration command](../cli/orth.md#commands)
-  - [Reporter CLI --custom-license-texts-dir, --repository-configuration-file and --package-configurations-dir options](../cli/reporter.md#configuration-options)
+* Code
+  * [model/src/main/kotlin/config/IssueResolutionReason.kt][IssueResolutionReason]
+  * [model/src/main/kotlin/config/LicenseFindingCuration.kt][LicenseFindingCuration]
+  * [model/src/main/kotlin/config/LicenseFindingCurationReason.kt][LicenseFindingCurationReason]
+  * [model/src/main/kotlin/config/PathExcludeReason.kt][PathExcludeReason]
+  * [model/src/main/kotlin/config/PathIncludeReason.kt][PathIncludeReason]
+  * [model/src/main/kotlin/config/ScopeExcludeReason.kt][ScopeExcludeReason]
+  * [model/src/main/kotlin/config/SnippetChoices.kt][SnippetChoices]
+  * [model/src/main/kotlin/config/snippet/SnippetChoice.kt][SnippetChoice]
+  * [model/src/main/kotlin/config/snippet/SnippetChoiceReason.kt][SnippetChoiceReason]
+  * [model/src/main/kotlin/config/RuleViolationResolutionReason.kt][RuleViolationResolutionReason]
+  * [model/src/main/kotlin/config/VulnerabilityResolutionReason.kt][VulnerabilityResolutionReason]
+  * [model/src/main/kotlin/config/PackageConfiguration.kt][PackageConfiguration]
+  * [model/src/main/kotlin/PackageCurationData.kt][PackageCurationData]
+  * [src/main/kotlin/config/RepositoryConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/RepositoryConfiguration.kt)
+* Examples
+  * [examples/*.ort.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/)
+* How-to guides
+  * [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
+  * [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
+  * [How to address a license policy violation](../../how-to-guides/how-to-address-a-license-policy-violation.md)
+  * [How to check and remediate vulnerabilities in dependencies](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
+  * [How to make license choices](../../how-to-guides/how-to-make-a-license-choice.md)
+  * [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
+* JSON schema
+  * [integrations/schemas/repository-configuration-schema.json](https://github.com/oss-review-toolkit/ort/blob/main/integrations/schemas/repository-configuration-schema.json)
+* Reference
+  * [Analyzer CLI --repository-configuration-file option](../cli/analyzer.md#configuration-options)
+  * [Evaluator CLI --repository-configuration-file option](../cli/evaluator.md#configuration-options)
+  * [Helper CLI --repository-configuration command](../cli/orth.md#commands)
+  * [Reporter CLI --custom-license-texts-dir, --repository-configuration-file and --package-configurations-dir options](../cli/reporter.md#configuration-options)
 
 [AntPathMatcher]: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/AntPathMatcher.html
 [FossID]: https://fossid.com

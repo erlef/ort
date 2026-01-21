@@ -6,7 +6,7 @@ By the end, you'll understand how ORT's tools work together and be ready to use 
 
 ## Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) installed on your machine
+* [Docker](https://docs.docker.com/get-docker/) installed on your machine
 
 If you prefer to install ORT differently, see the [installation guide](../../getting-started/installation.md).
 
@@ -108,12 +108,12 @@ With the test project cloned and Docker ready, let's start by [analyzing the pro
 
 ## Related resources
 
-- Reference
-  - [Advisor CLI][advisor]
-  - [Analyzer CLI][analyzer]
-  - [Evaluator CLI][evaluator]
-  - [Reporter CLI][reporter]
-  - [Scanner CLI][scanner]
+* Reference
+  * [Advisor CLI][advisor]
+  * [Analyzer CLI][analyzer]
+  * [Evaluator CLI][evaluator]
+  * [Reporter CLI][reporter]
+  * [Scanner CLI][scanner]
 
 [advisor]: ../../reference/cli/advisor.md
 [analyzer]: ../../reference/cli/analyzer.md

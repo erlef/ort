@@ -80,10 +80,10 @@ You can provide custom "how to fix" text for issues to help users fix issues the
 
 ## Related resources
 
-- Reference
-  - [Package curations][package-curations]
-  - [Resolutions][resolutions]
-  - [How to fix text provider][how-to-fix-text-provider]
+* Reference
+  * [Package curations][package-curations]
+  * [Resolutions][resolutions]
+  * [How to fix text provider][how-to-fix-text-provider]
 
 [config-env-vars]: ../reference/configuration/index.md#protecting-environment-variables
 [how-to-fix-text-provider]: ../reference/configuration/how-to-fix-text-provider.md

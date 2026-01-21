@@ -4,12 +4,12 @@ In an ideal world, every package used by a project has its applicable license(s)
 
 The ORT project
 
-- How-to guides
-  - [How to exclude dirs, files or scopes][how-to-exclude-dirs-files-or-scopes]
-- Reference
-  - [Package configurations][package-configurations]
-  - [Repository configuration (.ort.yml)][ort-yml]
-  - [Scanner CLI][scanner]
+* How-to guides
+  * [How to exclude dirs, files or scopes][how-to-exclude-dirs-files-or-scopes]
+* Reference
+  * [Package configurations][package-configurations]
+  * [Repository configuration (.ort.yml)][ort-yml]
+  * [Scanner CLI][scanner]
 
 [how-to-exclude-dirs-files-or-scopes]: ../how-to-guides/how-to-exclude-dirs-files-or-scopes.md
 [ort-yml]: ../reference/configuration/ort-yml.md

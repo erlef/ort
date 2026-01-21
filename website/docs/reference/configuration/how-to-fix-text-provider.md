@@ -30,11 +30,11 @@ docker run ghcr.io/oss-review-toolkit/ort report \
 
 ## Related resources
 
-- Code
-  - [reporter/src/main/kotlin/HowToFixTextProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/reporter/src/main/kotlin/HowToFixTextProvider.kt)
-- Examples
-  - [examples/example.how-to-fix-text-provider.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.how-to-fix-text-provider.kts)
-- How-to guides
-  - [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
-- Reference
-  - [Reporter CLI](../cli/reporter.md)
+* Code
+  * [reporter/src/main/kotlin/HowToFixTextProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/reporter/src/main/kotlin/HowToFixTextProvider.kt)
+* Examples
+  * [examples/example.how-to-fix-text-provider.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.how-to-fix-text-provider.kts)
+* How-to guides
+  * [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
+* Reference
+  * [Reporter CLI](../cli/reporter.md)

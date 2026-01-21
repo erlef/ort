@@ -26,39 +26,39 @@ It consists of the following tools which can be combined into a *highly customiz
 
 ORT documentation is organized using the following [system][documentation-system]:
 
-- *Getting Started* - Begin here if you are new to ORT.
-  - [Installing ORT](getting-started/installation.md)
-  - [Usage](getting-started/usage.md)
-  - [CI integrations](getting-started/ci-integrations.md)
-- *Tutorials* - Learn via practical, step-by-step guides.
-  - [Using ORT on your first project](tutorials/walkthrough/index.md)
-  - [Addressing WebApp report findings](tutorials/adresssing-webapp-report-findings.md)
-  - [Automating policy checks](tutorials/automating-policy-checks.md)
-  - [Running ORT with Docker](tutorials/docker.md)
-- *How-to guides* - Goal-oriented guides for specific tasks:
-  - [How to exclude dirs, files, or scopes](how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
-  - [How to address tool issues](how-to-guides/how-to-address-tool-issues.md)
-  - [How to define package sources](how-to-guides/how-to-define-package-sources.md)
-  - [How to correct licenses](how-to-guides/how-to-correct-licenses.md)
-  - [How to address a license policy violation](how-to-guides/how-to-address-a-license-policy-violation.md)
-  - [How to make a license choice](how-to-guides/how-to-make-a-license-choice.md)
-  - [How to check and remediate vulnerabilities in dependencies](how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
-  - [How to generate SBOMs](how-to-guides/how-to-generate-sboms.md)
-  - [How to download sources for projects and dependencies](how-to-guides/how-to-download-sources-for-projects-and-dependencies.md)
-- *Reference* - Consult the reference to find CLI parameters.
-  - [ORT CLI reference](reference/cli/index.md)
-  - [ORT Helper CLI reference](reference/cli/orth.md)
-- *Explanation* - Deepen your understanding of ORT key concepts.
-  - [Types of licenses](explanation/types-of-licenses.md)
-  - [License clearance strategies](explanation/license-clearance-strategies.md)
-  - [Documentation system](explanation/documentation-system.md)
+* *Getting Started* - Begin here if you are new to ORT.
+  * [Installing ORT](getting-started/installation.md)
+  * [Usage](getting-started/usage.md)
+  * [CI integrations](getting-started/ci-integrations.md)
+* *Tutorials* - Learn via practical, step-by-step guides.
+  * [Using ORT on your first project](tutorials/walkthrough/index.md)
+  * [Addressing WebApp report findings](tutorials/adresssing-webapp-report-findings.md)
+  * [Automating policy checks](tutorials/automating-policy-checks.md)
+  * [Running ORT with Docker](tutorials/docker.md)
+* *How-to guides* - Goal-oriented guides for specific tasks:
+  * [How to exclude dirs, files, or scopes](how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
+  * [How to address tool issues](how-to-guides/how-to-address-tool-issues.md)
+  * [How to define package sources](how-to-guides/how-to-define-package-sources.md)
+  * [How to correct licenses](how-to-guides/how-to-correct-licenses.md)
+  * [How to address a license policy violation](how-to-guides/how-to-address-a-license-policy-violation.md)
+  * [How to make a license choice](how-to-guides/how-to-make-a-license-choice.md)
+  * [How to check and remediate vulnerabilities in dependencies](how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
+  * [How to generate SBOMs](how-to-guides/how-to-generate-sboms.md)
+  * [How to download sources for projects and dependencies](how-to-guides/how-to-download-sources-for-projects-and-dependencies.md)
+* *Reference* - Consult the reference to find CLI parameters.
+  * [ORT CLI reference](reference/cli/index.md)
+  * [ORT Helper CLI reference](reference/cli/orth.md)
+* *Explanation* - Deepen your understanding of ORT key concepts.
+  * [Types of licenses](explanation/types-of-licenses.md)
+  * [License clearance strategies](explanation/license-clearance-strategies.md)
+  * [Documentation system](explanation/documentation-system.md)
 
 ## Staying informed
 
-- [GitHub]
-- [Slack]
-- [ORT weekly meeting][ort-weekly-meeting]
-- [LinkedIn]
+* [GitHub]
+* [Slack]
+* [ORT weekly meeting][ort-weekly-meeting]
+* [LinkedIn]
 
 ## Something missing?
 

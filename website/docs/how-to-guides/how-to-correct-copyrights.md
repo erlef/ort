@@ -28,7 +28,7 @@ Unlike license findings, ORT does not yet support curating individual copyright 
 
 ## Related resources
 
-- Reference
-  - [Copyright garbage][copyright-garbage]
+* Reference
+  * [Copyright garbage][copyright-garbage]
 
 [copyright-garbage]: ../reference/configuration/copyright-garbage.md

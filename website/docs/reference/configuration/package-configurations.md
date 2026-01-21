@@ -19,9 +19,9 @@ By using ORT package configurations, you can highly automate software supply cha
 
 Use a package configuration to:
 
-- Mark files and directories in package sources as not included the corresponding (binary) released artifacts.
+* Mark files and directories in package sources as not included the corresponding (binary) released artifacts.
   Use it to make clear that license findings in documentation or tests in a package sources do not apply to the release (binary) artifact which is a dependency in your project.
-- Overwrite scanner findings to correct identified licenses for a specific file(s) present in a dependency sources or code repository.
+* Overwrite scanner findings to correct identified licenses for a specific file(s) present in a dependency sources or code repository.
 
 ## Package configuration file basics
 
@@ -147,22 +147,22 @@ docker run ghcr.io/oss-review-toolkit/ort report \
 
 ## Related resources
 
-- Code
-  - [main/model/src/main/kotlin/config/PackageConfiguration.kt][PackageConfiguration]
-  - [model/src/main/resources/reference.yml][reference-yml]
-  - [plugins/package-configuration-providers/](https://github.com/oss-review-toolkit/ort/tree/main/plugins/package-configuration-providers)
-- Examples
-  - [examples/package-configurations.ort.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/package-configurations.ort.yml)
-  - [package-configurations/ within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/package-configurations)
-  - [Ivy-style version matchers][ivy-style-version-matchers]
-- How-to guides
-  - [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
-  - [How to exclude dirs, files or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes)
-  - [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
-- Reference
-  - [Evaluator CLI --package-configurations-dir option](../cli/evaluator.md#configuration-options)
-  - [Helper CLI package-configuration commands](../cli/orth.md#commands)
-  - [Reporter CLI --package-configurations-dir option](../cli/reporter.md#configuration-options)
+* Code
+  * [main/model/src/main/kotlin/config/PackageConfiguration.kt][PackageConfiguration]
+  * [model/src/main/resources/reference.yml][reference-yml]
+  * [plugins/package-configuration-providers/](https://github.com/oss-review-toolkit/ort/tree/main/plugins/package-configuration-providers)
+* Examples
+  * [examples/package-configurations.ort.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/package-configurations.ort.yml)
+  * [package-configurations/ within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/package-configurations)
+  * [Ivy-style version matchers][ivy-style-version-matchers]
+* How-to guides
+  * [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
+  * [How to exclude dirs, files or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes)
+  * [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
+* Reference
+  * [Evaluator CLI --package-configurations-dir option](../cli/evaluator.md#configuration-options)
+  * [Helper CLI package-configuration commands](../cli/orth.md#commands)
+  * [Reporter CLI --package-configurations-dir option](../cli/reporter.md#configuration-options)
 
 [AntPathMatcher]: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/util/AntPathMatcher.html
 [ivy-style-version-matchers]: https://ant.apache.org/ivy/history/2.5.0/settings/version-matchers.html

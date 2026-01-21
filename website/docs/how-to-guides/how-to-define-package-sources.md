@@ -46,9 +46,9 @@ For closed-source or proprietary packages where no sources are available, set `s
 
 ## Related resources
 
-- Reference
-  - [Package curations][package-curations]
-  - [Downloader CLI][downloader]
+* Reference
+  * [Package curations][package-curations]
+  * [Downloader CLI][downloader]
 
 [downloader]: ../reference/cli/downloader.md
 [scanner]: ../reference/cli/scanner.md

@@ -69,7 +69,6 @@ ort-scan:
 The [Forgejo Action for ORT][ort-ci-forgejo-action] runs ORT in Forgejo workflows -
 see its [repository][ort-ci-forgejo-action] for configuration options and usage examples.
 
-
 ```yaml
 on:
   push:
@@ -106,8 +105,8 @@ The [GitHub][ort-ci-github-action], [GitLab][ort-ci-gitlab], and [Forgejo action
 
 To customize the configuration, you can either:
 
-- Place your own configuration files in `$HOME/.ort/config` in your CI environment
-- Clone the default ort-config repository and modify it to suit your needs
+* Place your own configuration files in `$HOME/.ort/config` in your CI environment
+* Clone the default ort-config repository and modify it to suit your needs
 
 For an example of this pattern, see how the Elixir project uses the default ort-config repository while providing its own package configurations and evaluator rules in its [ORT workflow](https://github.com/elixir-lang/elixir/blob/main/.github/workflows/ort/action.yml).
 

@@ -65,10 +65,10 @@ Similarly, use `include-source-code-offer-in-notice-file` to include a written s
 
 ## Related resources
 
-- Examples
-  - [ort-config license-classifications.yml](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
-  - [ort-config evaluator.rules.kts](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
-- Reference
-  - [License classifications][license-classifications]
+* Examples
+  * [ort-config license-classifications.yml](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
+  * [ort-config evaluator.rules.kts](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
+* Reference
+  * [License classifications][license-classifications]
 
 [license-classifications]: ../reference/configuration/license-classifications.md

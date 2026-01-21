@@ -29,8 +29,8 @@ docker run --rm \
 
 New options:
 
-| Option | Description |
-|--------|-------------|
+| Option         | Description                               |
+| -------------- | ----------------------------------------- |
 | `--rules-file` | The Kotlin script containing policy rules |
 
 You should see output like this:
@@ -172,16 +172,16 @@ The evaluator has checked our project against policy rules. Now let's use the [R
 
 ## Related resources
 
-- How-to guides
-  - [How to classify licenses](../../how-to-guides/how-to-classify-licenses.md)
-  - [How to address a license policy violation](../../how-to-guides/how-to-address-a-license-policy-violation.md)
-  - [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
-  - [How to exclude dirs, files, or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
-- Reference
-  - [Evaluator CLI][evaluator]
-  - [Evaluator rules DSL - specify your own policy checks](../../reference/configuration/evaluator-rules.md)
-  - [License classifications - categorize license for use in policy checks](../../reference/configuration/license-classifications.md)
-  - [Package configurations - correct or exclude findings in dependency sources](../../reference/configuration/package-configurations.md)
+* How-to guides
+  * [How to classify licenses](../../how-to-guides/how-to-classify-licenses.md)
+  * [How to address a license policy violation](../../how-to-guides/how-to-address-a-license-policy-violation.md)
+  * [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
+  * [How to exclude dirs, files, or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
+* Reference
+  * [Evaluator CLI][evaluator]
+  * [Evaluator rules DSL - specify your own policy checks](../../reference/configuration/evaluator-rules.md)
+  * [License classifications - categorize license for use in policy checks](../../reference/configuration/license-classifications.md)
+  * [Package configurations - correct or exclude findings in dependency sources](../../reference/configuration/package-configurations.md)
 
 [evaluator]: ../../reference/cli/evaluator.md
 [reporter]: ../../reference/cli/reporter.md

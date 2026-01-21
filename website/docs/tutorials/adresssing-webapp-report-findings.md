@@ -4,8 +4,8 @@ This tutorial guides you through the process of addressing findings in an ORT We
 
 ## Prerequisites
 
-- An ORT scan result with a generated WebApp report
-- Basic familiarity with [ORT's pipeline][walkthrough] and the WebApp report interface
+* An ORT scan result with a generated WebApp report
+* Basic familiarity with [ORT's pipeline][walkthrough] and the WebApp report interface
 
 ## Overview
 
@@ -46,15 +46,15 @@ ort report --ort-file output/evaluation-result.yml --output-dir output --report-
 **What to configure:**
 
 1. **Path excludes** - Mark directories and files not included in your release:
-   - Test directories (`test/`, `tests/`, `spec/`)
-   - Documentation (`docs/`, `*.md`)
-   - Build configuration (`.github/`, `Makefile`)
-   - Development tooling (`scripts/`, `.devcontainer/`)
+   * Test directories (`test/`, `tests/`, `spec/`)
+   * Documentation (`docs/`, `*.md`)
+   * Build configuration (`.github/`, `Makefile`)
+   * Development tooling (`scripts/`, `.devcontainer/`)
 
 2. **Scope excludes** - If your package manager supports dependency scopes, exclude non-production scopes:
-   - `devDependencies` (npm/yarn)
-   - `test` scope (Maven/Gradle)
-   - `dev-dependencies` (Cargo)
+   * `devDependencies` (npm/yarn)
+   * `test` scope (Maven/Gradle)
+   * `dev-dependencies` (Cargo)
 
 **How to configure:** See [How to exclude dirs, files, or scopes][how-to-exclude] and [How to include dirs and files][how-to-include] for `.ort.yml` syntax and examples.
 
@@ -76,7 +76,7 @@ ort report --ort-file output/evaluation-result.yml --output-dir output --report-
 **Understanding severity levels:**
 
 | Severity | Meaning | Typical action |
-|----------|---------|----------------|
+| -------- | ------- | -------------- |
 | **ERROR** | Blocks release, must be fixed | Fix before release |
 | **WARNING** | Should be addressed | Fix when possible |
 | **HINT** | Nice to fix | Address as time permits |
@@ -102,9 +102,10 @@ For each ERROR-level policy violation on a dependency, work through these sub-st
 ### 4c. Correct license findings
 
 **When this applies:** The scanner detected an incorrect license (false positive) or missed the actual license. This can happen when:
-- Text resembles a license but isn't one
-- A file contains multiple licenses but only one applies
-- The scanner matched a similar but incorrect license
+
+* Text resembles a license but isn't one
+* A file contains multiple licenses but only one applies
+* The scanner matched a similar but incorrect license
 
 **How to fix:** Use license finding curations in a package configuration. See [How to correct licenses][how-to-correct-licenses] for examples.
 
@@ -140,25 +141,25 @@ See the [resolutions reference][resolutions] for all available options.
 
 ## What's next
 
-- [Automating policy checks][automating-policy-checks] - Set up ORT in CI to catch issues early
-- [Generating SBOMs][generating-sboms] - Create compliance artifacts from your ORT results
+* [Automating policy checks][automating-policy-checks] - Set up ORT in CI to catch issues early
+* [Generating SBOMs][generating-sboms] - Create compliance artifacts from your ORT results
 
 ## Related resources
 
-- How-to guides
-  - [How to address tool issues][how-to-tool-issues]
-  - [How to exclude dirs, files, or scopes][how-to-exclude]
-  - [How to include dirs and files][how-to-include]
-  - [How to address a license policy violation][how-to-policy-violation]
-  - [How to correct licenses][how-to-correct-licenses]
-  - [How to make a license choice][how-to-license-choice]
-- Explanation
-  - [License clearance strategies][license-clearance-strategies]
-- Reference
-  - [Repository configuration (.ort.yml)][ort-yml]
-  - [Package configurations][package-configurations]
-  - [Package curations][package-curations]
-  - [Resolutions][resolutions]
+* How-to guides
+  * [How to address tool issues][how-to-tool-issues]
+  * [How to exclude dirs, files, or scopes][how-to-exclude]
+  * [How to include dirs and files][how-to-include]
+  * [How to address a license policy violation][how-to-policy-violation]
+  * [How to correct licenses][how-to-correct-licenses]
+  * [How to make a license choice][how-to-license-choice]
+* Explanation
+  * [License clearance strategies][license-clearance-strategies]
+* Reference
+  * [Repository configuration (.ort.yml)][ort-yml]
+  * [Package configurations][package-configurations]
+  * [Package curations][package-curations]
+  * [Resolutions][resolutions]
 
 [automating-policy-checks]: automating-policy-checks.md
 [generating-sboms]: walkthrough/generating-sboms.md

@@ -43,8 +43,8 @@ snippet_choices:
 
 ## Related resources
 
-- Reference
-  - [Repository configuration (.ort.yml)][ort-yml]
+* Reference
+  * [Repository configuration (.ort.yml)][ort-yml]
 
 [ort-yml]: ../reference/configuration/ort-yml.md
 [ort-yml-snippet-choices]: ../reference/configuration/ort-yml.md#snippet-choices

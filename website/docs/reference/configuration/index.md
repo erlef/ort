@@ -37,16 +37,16 @@ The meaning of these sections and the properties they can contain is described t
 While the file is rather static, there are means to override configuration options for a specific run of ORT or to customize the configuration to a specific environment.
 The following options are supported (in order of precedence):
 
-- Properties can be defined via environment variables by using the full property path as the variable name.
+* Properties can be defined via environment variables by using the full property path as the variable name.
   For instance, one can override the Postgres schema by setting `ort.scanner.storages.postgres.connection.schema=test_schema`.
   The variable's name is case-sensitive.
   Some programs like Bash do not support dots in variable names.
   For this case, the dots can be replaced by double underscores, i.e., the above example is turned into `ort__scanner__storages__postgres__connection__schema=test_schema`.
-- In addition to that, one can override the values of properties on the command line using the `-P` option.
+* In addition to that, one can override the values of properties on the command line using the `-P` option.
   The option expects a key-value pair.
   Again, the key must define the full path to the property to be overridden, e.g. `-P ort.scanner.storages.postgres.connection.schema=test_schema`.
   The `-P` option can be repeated on the command line to override multiple properties.
-- Properties in the configuration file can reference environment variables using the syntax `${VAR}`.
+* Properties in the configuration file can reference environment variables using the syntax `${VAR}`.
   This is especially useful to reference dynamic or sensitive data.
   As an example, the credentials for the Postgres database used as scan results storage could be defined in the `POSTGRES_USERNAME` and `POSTGRES_PASSWORD` environment variables.
   The configuration file can then reference these values as follows:
@@ -106,7 +106,7 @@ A directory with multiple files containing configurations to set provenance-spec
 | ----------- | -------------------- | ----------------------------------------- |
 | YAML / JSON | Package (dependency) | `$ORT_CONFIG_DIR/package-configurations/` |
 
-### [Package curations file / directory ](package-curations.md)
+### [Package curations file / directory](package-curations.md)
 
 A single file or a directory with multiple files containing configurations to correct invalid or missing package metadata or set the concluded license for packages.
 
@@ -139,7 +139,6 @@ Configurations to resolve any issues or rule violations by providing a mandatory
 | ----------- | ------ | --------------------------------- |
 | YAML / JSON | Global | `$ORT_CONFIG_DIR/resolutions.yml` |
 
-
 ## Protecting environment variables
 
 To do its analysis, ORT invokes a number of external tools, such as package managers or scanners.
@@ -158,5 +157,5 @@ This filter mechanism can be configured via the following properties in the [ORT
 This mechanism offers a certain level of security without enforcing an excessive amount of configuration, which would be needed, for instance, to define an explicit allowlist.
 With the two configuration properties, even corner cases can be defined:
 
-- To disable filtering of environment variables completely, set the `deniedProcessEnvironmentVariablesSubstrings` property to a single string that is certainly not contained in any environment variable, such as "This is for sure not contained in a variable name."
-- To prevent that any environment variable is passed to a child process, substrings can be configured in `deniedProcessEnvironmentVariablesSubstrings` that match all variables, for instance one string for each letter of the alphabet.
+* To disable filtering of environment variables completely, set the `deniedProcessEnvironmentVariablesSubstrings` property to a single string that is certainly not contained in any environment variable, such as "This is for sure not contained in a variable name."
+* To prevent that any environment variable is passed to a child process, substrings can be configured in `deniedProcessEnvironmentVariablesSubstrings` that match all variables, for instance one string for each letter of the alphabet.

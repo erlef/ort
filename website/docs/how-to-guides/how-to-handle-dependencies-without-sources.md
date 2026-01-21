@@ -5,9 +5,10 @@ Some packages have no sources — e.g., metadata-only packages (Maven BOMs), pro
 ## Metadata-only packages (no source code files to scan)
 
 Metadata-only (binary) packages do not contain source code and only provide metadata, for example:
-- Maven BOM (Bill of Materials) files
-- Platform or version-constraint packages
-- Virtual packages that only pull in other dependencies
+
+* Maven BOM (Bill of Materials) files
+* Platform or version-constraint packages
+* Virtual packages that only pull in other dependencies
 
 Mark these packages using a [package curation][package-curations] with `is_metadata_only: true` to tell ORT to skip downloading and scanning.
 
@@ -44,12 +45,12 @@ issues:
 
 ## Related resources
 
-- How-to guides
-  - [How to define package sources][how-to-define-package-sources]
-- Reference
-  - [Package curations][package-curations]
-  - [Resolutions][resolutions]
-  - [Scanner CLI][scanner]
+* How-to guides
+  * [How to define package sources][how-to-define-package-sources]
+* Reference
+  * [Package curations][package-curations]
+  * [Resolutions][resolutions]
+  * [Scanner CLI][scanner]
 
 [how-to-define-package-sources]: how-to-define-package-sources.md
 [package-curations]: ../reference/configuration/package-curations.md

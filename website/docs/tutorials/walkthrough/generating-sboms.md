@@ -22,10 +22,10 @@ docker run --rm \
 
 New options:
 
-| Option | Description |
-|--------|-------------|
-| `--report-formats` | Which report format(s) to generate |
-| `-O` | Format-specific options (e.g., output file formats) |
+| Option             | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| `--report-formats` | Which report format(s) to generate                   |
+| `-O`               | Format-specific options (e.g., output file formats)  |
 
 You should see output like this:
 
@@ -49,29 +49,29 @@ Created 3 of 3 report(s) in 318.107458ms.
 
 This generates:
 
-- **CycloneDX**: `bom.cyclonedx.json` and `bom.cyclonedx.xml` - A widely-used SBOM format, particularly in security contexts
-- **SPDX**: `bom.spdx.json` and `bom.spdx.yml` - The ISO/IEC standard for SBOMs
-- **WebApp**: `scan-report-web-app.html` - The interactive report we've been using
+* **CycloneDX**: `bom.cyclonedx.json` and `bom.cyclonedx.xml` - A widely-used SBOM format, particularly in security contexts
+* **SPDX**: `bom.spdx.json` and `bom.spdx.yml` - The ISO/IEC standard for SBOMs
+* **WebApp**: `scan-report-web-app.html` - The interactive report we've been using
 
 ## What's next
 
 Congratulations! You've completed the ORT walkthrough. You now know how to:
 
-- Analyze dependencies with the Analyzer
-- Visualize results with the WebApp report
-- Scan for licenses with the Scanner
-- Check for vulnerabilities with the Advisor
-- Apply policy rules with the Evaluator
-- Generate SBOMs with the Reporter
+* Analyze dependencies with the Analyzer
+* Visualize results with the WebApp report
+* Scan for licenses with the Scanner
+* Check for vulnerabilities with the Advisor
+* Apply policy rules with the Evaluator
+* Generate SBOMs with the Reporter
 
 To use ORT on your own projects, check out the *Getting Started* section for [installation](../../getting-started/installation.md) and [CI integration](../../getting-started/ci-integrations.md) options.
 
 ## Related resources
 
-- How-to guides
-  - [How to generate SBOMs - whether CycloneDX or SPDX](../../how-to-guides/how-to-generate-sboms.md)
-- Reference
-  - [Reporter CLI][reporter]
-  - [Reporter templates - to generate custom notices and reports](../../reference/configuration/reporter-templates.md)
+* How-to guides
+  * [How to generate SBOMs - whether CycloneDX or SPDX](../../how-to-guides/how-to-generate-sboms.md)
+* Reference
+  * [Reporter CLI][reporter]
+  * [Reporter templates - to generate custom notices and reports](../../reference/configuration/reporter-templates.md)
 
 [reporter]: ../../reference/cli/reporter.md

@@ -30,8 +30,8 @@ Package-level choices override repository-level choices.
 
 ## Related resources
 
-- Reference
-  - [Repository configuration (.ort.yml)][ort-yml]
+* Reference
+  * [Repository configuration (.ort.yml)][ort-yml]
 
 [ort-yml]: ../reference/configuration/ort-yml.md
 [ort-yml-license-choices]: ../reference/configuration/ort-yml.md#license-choices

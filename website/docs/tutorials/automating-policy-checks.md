@@ -22,9 +22,9 @@ Let's implement each requirement as an ORT evaluator rule.
 
 ## Prerequisites
 
-- Basic familiarity with ORT (see the [walkthrough tutorial](walkthrough/index.md))
-- An ORT result file from running the analyzer and scanner
-- Basic knowledge of Kotlin syntax
+* Basic familiarity with ORT (see the [walkthrough tutorial](walkthrough/index.md))
+* An ORT result file from running the analyzer and scanner
+* Basic knowledge of Kotlin syntax
 
 ## Setting up
 
@@ -41,7 +41,7 @@ ort evaluate \
 ```
 
 | Option | Description |
-|--------|-------------|
+| ------ | ----------- |
 | `-i` | Input ORT result file (from analyzer, scanner, or advisor) |
 | `-o` | Output directory for the evaluation result |
 | `--rules-file` | Path to your rules script |
@@ -56,9 +56,10 @@ See the [Evaluator CLI reference](../reference/cli/evaluator.md) for all availab
 Before writing rules, we need to categorize licenses. The [ort-config repository](https://github.com/oss-review-toolkit/ort-config) provides a comprehensive default [license-classifications.yml](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml) that covers most common licenses and can be used as-is or as a starting point.
 
 For this tutorial, we'll create a custom `license-classifications.yml` that matches Example LLC's specific policy categories. You typically need a custom file when:
-- Your policy uses different category names or groupings
-- You need to add custom or proprietary licenses not in the default file
-- You want to categorize licenses differently than the defaults
+
+* Your policy uses different category names or groupings
+* You need to add custom or proprietary licenses not in the default file
+* You want to categorize licenses differently than the defaults
 
 ```yaml
 categories:
@@ -196,17 +197,18 @@ fun RuleSet.unhandledLicenseRule() = packageRule("UNHANDLED_LICENSE") {
 ```
 
 Key concepts:
-- `require {}` defines conditions that must be met for the rule to apply
-- `-isExcluded()` means "package must NOT be excluded" (the `-` negates)
-- `-isHandled()` means "license must NOT be in our handled set" (triggering the error)
-- `licenseRule()` iterates over each license in the package
+
+* `require {}` defines conditions that must be met for the rule to apply
+* `-isExcluded()` means "package must NOT be excluded" (the `-` negates)
+* `-isHandled()` means "license must NOT be in our handled set" (triggering the error)
+* `licenseRule()` iterates over each license in the package
 
 ### Understanding LicenseView
 
 The `LicenseView` parameter determines which licenses to check:
 
 | View | Description |
-|------|-------------|
+| ---- | ----------- |
 | `CONCLUDED_OR_DECLARED_AND_DETECTED` | Use concluded license if available, otherwise require both declared and detected |
 | `CONCLUDED_OR_DECLARED_OR_DETECTED` | Use concluded, then declared, then detected (first available) |
 | `ONLY_CONCLUDED` | Only check concluded licenses |
@@ -322,7 +324,7 @@ fun RuleSet.copyleftLimitedStaticLinkRule() = dependencyRule("COPYLEFT_LIMITED_S
 ```
 
 | Matcher | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `isAtTreeLevel(0)` | Direct dependency |
 | `isAtTreeLevel(1)` | Transitive dependency (one level deep) |
 | `isStaticallyLinked()` | Dependency uses static or project-static linkage |
@@ -852,7 +854,7 @@ fun PackageRule.howToFixLicenseViolation(): String {
 
 Help users fix issues by generating ready-to-use configuration snippets:
 
-~~~kotlin
+````kotlin
 fun PackageRule.generatePackageConfigurationHint(): String {
     val id = pkg.metadata.id
     val provenance = pkg.provenance
@@ -882,7 +884,7 @@ fun PackageRule.generatePackageConfigurationHint(): String {
         ```
     """.trimIndent()
 }
-~~~
+````
 
 ### Differentiating projects from dependencies
 
@@ -946,22 +948,22 @@ fun RuleSet.strictModeRules() = packageRule("STRICT_MODE_CHECK") {
 
 You now have a working rules file that implements Example LLC's license policy. From here you can:
 
-- Add the rules file to version control so policy changes are tracked
-- Run the evaluator in CI to catch violations before merging
-- Adjust thresholds and severity levels as your policy evolves
-- Add more license categorizations as you encounter new licenses
+* Add the rules file to version control so policy changes are tracked
+* Run the evaluator in CI to catch violations before merging
+* Adjust thresholds and severity levels as your policy evolves
+* Add more license categorizations as you encounter new licenses
 
 ## Related resources
 
-- Examples
-  - [example.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.rules.kts)
-  - [ort-config evaluator.rules.kts](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
-- How-to guides
-  - [How to classify licenses](../how-to-guides/how-to-classify-licenses.md)
-  - [How to address a license policy violation](../how-to-guides/how-to-address-a-license-policy-violation.md)
-- Reference
-  - [Evaluator rules DSL](../reference/configuration/evaluator-rules.md)
-  - [Evaluator CLI][evaluator]
-  - [License classifications](../reference/configuration/license-classifications.md)
+* Examples
+  * [example.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.rules.kts)
+  * [ort-config evaluator.rules.kts](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
+* How-to guides
+  * [How to classify licenses](../how-to-guides/how-to-classify-licenses.md)
+  * [How to address a license policy violation](../how-to-guides/how-to-address-a-license-policy-violation.md)
+* Reference
+  * [Evaluator rules DSL](../reference/configuration/evaluator-rules.md)
+  * [Evaluator CLI][evaluator]
+  * [License classifications](../reference/configuration/license-classifications.md)
 
 [evaluator]: ../reference/cli/evaluator.md

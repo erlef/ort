@@ -112,13 +112,13 @@ cli-helper/build/install/orth/bin/orth create-analyzer-result-from-package-list 
 
 ## Related resources
 
-- Examples
-  - [examples/package-list.yml](https://github.com/oss-review-toolkit/ort/blob/main/cli-helper/src/funTest/resources/package-list.yml)
-  - [package.spdx.yml files within the ORT repository](https://github.com/search?q=repo%3Aoss-review-toolkit%2Fort+package.spdx.yml+language%3AYAML&type=code&l=YAML)
-- Reference
-  - [Analyzer CLI][analyzer]
-  - [Analyzer CLI - SPDX as fallback package manager][ort-analyzer-spdx-fallback]
-  - [ORT Helper CLI][orth]
+* Examples
+  * [examples/package-list.yml](https://github.com/oss-review-toolkit/ort/blob/main/cli-helper/src/funTest/resources/package-list.yml)
+  * [package.spdx.yml files within the ORT repository](https://github.com/search?q=repo%3Aoss-review-toolkit%2Fort+package.spdx.yml+language%3AYAML&type=code&l=YAML)
+* Reference
+  * [Analyzer CLI][analyzer]
+  * [Analyzer CLI - SPDX as fallback package manager][analyzer-spdx-fallback]
+  * [ORT Helper CLI][orth]
 
 [analyzer]: ../reference/cli/analyzer.md
 [analyzer-spdx-fallback]: ../reference/cli/analyzer.md#spdx-as-fallback-package-manager

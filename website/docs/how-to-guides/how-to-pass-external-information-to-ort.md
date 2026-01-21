@@ -2,8 +2,8 @@
 
 You can pass external information into ORT for several practical purposes, for example:
 
-- Use business, delivery, or organizational attributes inside ORT Evaluator policy rules.
-- Mark packages as proprietary (no sources available), or tag them as coming from a specific vendor or your organization.
+* Use business, delivery, or organizational attributes inside ORT Evaluator policy rules.
+* Mark packages as proprietary (no sources available), or tag them as coming from a specific vendor or your organization.
 
 ## Setting labels for an ORT run
 
@@ -78,21 +78,20 @@ fun getEnabledPolicyRules(): PolicyRules =
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/OrtResult.kt labels, getLabelValues() and hasLabel()](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/OrtResult.kt)
-  - [evaluator/src/main/kotlin/Rule.kt hasLabel()](https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/kotlin/Rule.kt)
-- Examples
-  - [Using labels in the GitHub Action for ORT](https://github.com/oss-review-toolkit/ort-ci-github-action?tab=readme-ov-file#Run-ORT-with-labels)
-  - [Using labels in the Forgejo Action for ORT](https://github.com/oss-review-toolkit/ort-ci-forgejo-action#run-ort-with-labels)
-  - [Using labels in the GitLab Job Template for ORT](https://github.com/oss-review-toolkit/ort-ci-gitlab?tab=readme-ov-file#Run-ORT-with-labels)
-  - [Labels with evaluator.rules.kts within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
-- Reference
-  - [ORT Analyzer CLI -l option](../reference/cli/evaluator.md#options)
-  - [ORT Evaluator CLI -l option](../reference/cli/evaluator.md#options)
-  - [ORT Helper CLI --set-labels command](../reference/cli/orth.md#commands)
-  - [ORT Notifier CLI -l option](../reference/cli/notifier.md#options)
-  - [ORT Scanner CLI -l option](../reference/cli/scanner.md#options)
-
+* Code
+  * [model/src/main/kotlin/OrtResult.kt labels, getLabelValues() and hasLabel()](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/OrtResult.kt)
+  * [evaluator/src/main/kotlin/Rule.kt hasLabel()](https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/kotlin/Rule.kt)
+* Examples
+  * [Using labels in the GitHub Action for ORT](https://github.com/oss-review-toolkit/ort-ci-github-action?tab=readme-ov-file#Run-ORT-with-labels)
+  * [Using labels in the Forgejo Action for ORT](https://github.com/oss-review-toolkit/ort-ci-forgejo-action#run-ort-with-labels)
+  * [Using labels in the GitLab Job Template for ORT](https://github.com/oss-review-toolkit/ort-ci-gitlab?tab=readme-ov-file#Run-ORT-with-labels)
+  * [Labels with evaluator.rules.kts within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
+* Reference
+  * [ORT Analyzer CLI -l option](../reference/cli/evaluator.md#options)
+  * [ORT Evaluator CLI -l option](../reference/cli/evaluator.md#options)
+  * [ORT Helper CLI --set-labels command](../reference/cli/orth.md#commands)
+  * [ORT Notifier CLI -l option](../reference/cli/notifier.md#options)
+  * [ORT Scanner CLI -l option](../reference/cli/scanner.md#options)
 
 [analyzer]: ../reference/cli/analyzer.md
 [curation]: ../reference/configuration/package-curations.md

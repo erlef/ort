@@ -5,6 +5,7 @@ The `license-classifications.yml` file holds a user-defined categorization of li
 ## When to use
 
 The information from the `license-classifications.yml` can be used by the:
+
 * ORT Evaluator: By defining categories like "permissive" or "public domain", policy rules can determine how to handle specific licenses and throw an error, warning or hint policy violations if incompliance is detected.
 * ORT Reporter: Based on their associated categories, the [plain text templates](reporter-templates.md#plain-text-templates) for generating NOTICE files can decide which licenses to include in the generated notice file. Use the `include-in-notice-file` category to mark a license as requiring attribution and include it in generated NOTICE files. Similary, if you want to include a written source code offer for a license, mark it with `include-source-code-offer-in-notice-file`.
 
@@ -55,18 +56,18 @@ docker run ghcr.io/oss-review-toolkit/ort evaluate \
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/licenses/LicenseClassifications.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/licenses/LicenseClassifications.kt)
-- Examples
-  - [examples/license-classifications.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/license-classifications.yml)
-  - [license-classifications.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
-  - [generated license-classifications.yml within the LDBcollector project](https://github.com/maxhbr/LDBcollector/blob/generated/ort/license-classifications.yml)
-- How-to guides
-  - [How to classify licenses](../../how-to-guides/how-to-classify-licenses.md)
-- JSON schema
-  - [integrations/schemas/license-classifications-schema.json](https://github.com/oss-review-toolkit/ort/blob/main/integrations/schemas/license-classifications-schema.json)
-- Reference
-  - [Downloader CLI --license-classifications-file option](../cli/downloader.md#configuration-options)
-  - [Evaluator CLI --license-classifications-file option](../cli/evaluator.md#configuration-options)
-  - [Helper CLI --license-classifications command](../cli/orth.md#commands)
-  - [Reporter CLI --license-classifications-file option](../cli/reporter.md#configuration-options)
+* Code
+  * [model/src/main/kotlin/licenses/LicenseClassifications.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/licenses/LicenseClassifications.kt)
+* Examples
+  * [examples/license-classifications.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/license-classifications.yml)
+  * [license-classifications.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
+  * [generated license-classifications.yml within the LDBcollector project](https://github.com/maxhbr/LDBcollector/blob/generated/ort/license-classifications.yml)
+* How-to guides
+  * [How to classify licenses](../../how-to-guides/how-to-classify-licenses.md)
+* JSON schema
+  * [integrations/schemas/license-classifications-schema.json](https://github.com/oss-review-toolkit/ort/blob/main/integrations/schemas/license-classifications-schema.json)
+* Reference
+  * [Downloader CLI --license-classifications-file option](../cli/downloader.md#configuration-options)
+  * [Evaluator CLI --license-classifications-file option](../cli/evaluator.md#configuration-options)
+  * [Helper CLI --license-classifications command](../cli/orth.md#commands)
+  * [Reporter CLI --license-classifications-file option](../cli/reporter.md#configuration-options)

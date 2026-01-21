@@ -78,10 +78,10 @@ ort report \
 
 ## Related resources
 
-- Reference
-  - [CycloneDX Reporter][cyclonedx-reporter]
-  - [Reporter CLI][reporter]
-  - [SPDX Document Reporter][spdx-reporter]
+* Reference
+  * [CycloneDX Reporter][cyclonedx-reporter]
+  * [Reporter CLI][reporter]
+  * [SPDX Document Reporter][spdx-reporter]
 
 [installation]: ../getting-started/installation.md
 [npm-mime-types-2.1.26-scan-result-json]: https://raw.githubusercontent.com/oss-review-toolkit/orthw-shell/refs/heads/main/examples/npm-mime-types-2.1.26-scan-result.json

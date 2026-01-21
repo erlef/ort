@@ -43,10 +43,10 @@ To override all license findings for a package, use a [package curation][package
 
 ## Related resources
 
-- Reference
-  - [Repository configuration (.ort.yml)][ort-yml]
-  - [Package configurations][package-configurations]
-  - [Package curations][package-curations]
+* Reference
+  * [Repository configuration (.ort.yml)][ort-yml]
+  * [Package configurations][package-configurations]
+  * [Package curations][package-curations]
 
 [ort-yml]: ../reference/configuration/ort-yml.md
 [ort-yml-license-curations]: ../reference/configuration/ort-yml.md#correcting-project-license-findings

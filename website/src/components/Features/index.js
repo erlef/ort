@@ -40,7 +40,10 @@ const FeatureList = [
           <li>
             Support for more than 20 package managers, including Bazel, Cargo,
             Gradle, Maven, npm, PIP, pnpm, Yarn, and{' '}
-            <Link to="docs/reference/cli/analyzer#supported-package-managers">many more</Link>.
+            <Link to="docs/reference/cli/analyzer#supported-package-managers">
+              many more
+            </Link>
+            .
           </li>
           <li>
             Works out-of-the-box with most project setups, no need for
@@ -48,7 +51,9 @@ const FeatureList = [
           </li>
           <li>
             Support for package metadata curations, either{' '}
-            <Link to="docs/reference/configuration/package-curations">self-written</Link>{' '}
+            <Link to="docs/reference/configuration/package-curations">
+              self-written
+            </Link>{' '}
             or sourced from public repositories like{' '}
             <Link to="https://clearlydefined.io/">ClearlyDefined</Link>.
           </li>
@@ -134,8 +139,8 @@ const FeatureList = [
         <ul>
           <li>
             Support for several{' '}
-            <Link to="docs/reference/cli/advisor">vulnerability providers</Link>,
-            including OSV and VulnerableCode.
+            <Link to="docs/reference/cli/advisor">vulnerability providers</Link>
+            , including OSV and VulnerableCode.
           </li>
           <li>
             Found vulnerabilities can be resolved if they do not apply to your
@@ -182,8 +187,8 @@ const FeatureList = [
       <>
         <p>
           The <b>Reporter</b> generates{' '}
-          <Link to="docs/reference/cli/reporter">various reports</Link> based on the
-          data gathered by the ORT toolchain.
+          <Link to="docs/reference/cli/reporter">various reports</Link> based on
+          the data gathered by the ORT toolchain.
         </p>
         <ul>
           <li>
@@ -198,8 +203,10 @@ const FeatureList = [
           </li>
           <li>
             Can build a{' '}
-            <Link to="docs/reference/plugins/reporters/WebApp">web application</Link> in a
-            single HTML file to visualize the gathered data.
+            <Link to="docs/reference/plugins/reporters/WebApp">
+              web application
+            </Link>{' '}
+            in a single HTML file to visualize the gathered data.
           </li>
         </ul>
       </>

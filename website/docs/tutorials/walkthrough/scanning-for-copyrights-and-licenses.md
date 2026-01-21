@@ -27,10 +27,10 @@ docker run --rm \
 
 New options:
 
-| Option | Description |
-|--------|-------------|
+| Option       | Description                 |
+| ------------ | --------------------------- |
 | `--ort-file` | The analyzer result to scan |
-| `--scanners` | Which scanner(s) to use |
+| `--scanners` | Which scanner(s) to use     |
 
 The scan takes a few minutes as it downloads and scans all packages. You should see output like this:
 
@@ -84,10 +84,10 @@ The scanner has revealed what licenses are actually in the code. Next, let's use
 
 ## Related resources
 
-- How-to guides
-  - [How to download sources for projects and dependencies](../../how-to-guides/how-to-download-sources-for-projects-and-dependencies.md)
-- Reference
-  - [Scanner CLI](../../reference/cli/scanner.md)
+* How-to guides
+  * [How to download sources for projects and dependencies](../../how-to-guides/how-to-download-sources-for-projects-and-dependencies.md)
+* Reference
+  * [Scanner CLI](../../reference/cli/scanner.md)
 
 [advisor]: ../../reference/cli/advisor.md
 [scanner]: ../../reference/cli/scanner.md

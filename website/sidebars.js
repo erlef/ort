@@ -25,7 +25,7 @@ const sidebars = {
         'getting-started/docker',
         'getting-started/ci-integrations',
         'getting-started/usage',
-        'getting-started/development'
+        'getting-started/development',
       ],
     },
     {
@@ -37,7 +37,7 @@ const sidebars = {
           label: 'Using ORT on your first project',
           link: {
             type: 'doc',
-            id: 'tutorials/walkthrough/index'
+            id: 'tutorials/walkthrough/index',
           },
           items: [
             'tutorials/walkthrough/analyzing-a-project-for-dependencies',
@@ -45,11 +45,11 @@ const sidebars = {
             'tutorials/walkthrough/scanning-for-copyrights-and-licenses',
             'tutorials/walkthrough/checking-for-vulnerabilities',
             'tutorials/walkthrough/running-policy-checks',
-            'tutorials/walkthrough/generating-sboms'
+            'tutorials/walkthrough/generating-sboms',
           ],
         },
         'tutorials/adresssing-webapp-report-findings',
-        'tutorials/automating-policy-checks'
+        'tutorials/automating-policy-checks',
       ],
     },
     {
@@ -73,7 +73,7 @@ const sidebars = {
         'how-to-guides/how-to-define-a-license',
         'how-to-guides/how-to-pass-external-information-to-ort',
         'how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies',
-        'how-to-guides/how-to-authenticate-with-private-repositories'
+        'how-to-guides/how-to-authenticate-with-private-repositories',
       ],
     },
     {
@@ -126,7 +126,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'reference/cli/orth',
-              label: 'ORT Helper'
+              label: 'ORT Helper',
             },
           ],
         },
@@ -148,7 +148,7 @@ const sidebars = {
             'reference/configuration/package-curations',
             'reference/configuration/reporter-templates',
             'reference/configuration/resolutions',
-            'reference/configuration/snippet-choices'
+            'reference/configuration/snippet-choices',
           ],
         },
         {

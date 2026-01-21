@@ -88,7 +88,7 @@ This loop can be repeated as needed.
 
 ## Handling false positives
 
-Continuing with the example from [above](#choosing-a-snippet), a problem remains:
+Continuing with the example from [above](#file-format), a problem remains:
 How to deal with a source location that has *only* false positives snippets?
 The solution is to use the `NO_RELEVANT_FINDING` reason in the `.ort.yml` file:
 
@@ -153,14 +153,14 @@ And here too, in the case of FossID, its state can be used for that.
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/config/SnippetChoices.kt][SnippetChoices]
-  - [model/src/main/kotlin/config/snippet/SnippetChoice.kt][SnippetChoice]
-  - [model/src/main/kotlin/config/snippet/SnippetChoiceReason.kt][SnippetChoiceReason]
-- How-to guides
-  - [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
-- Reference
-  - [Repository configuration (.ort.yml) - snippet choices](ort-yml.md#snippet-choices)
+* Code
+  * [model/src/main/kotlin/config/SnippetChoices.kt][SnippetChoices]
+  * [model/src/main/kotlin/config/snippet/SnippetChoice.kt][SnippetChoice]
+  * [model/src/main/kotlin/config/snippet/SnippetChoiceReason.kt][SnippetChoiceReason]
+* How-to guides
+  * [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
+* Reference
+  * [Repository configuration (.ort.yml) - snippet choices](ort-yml.md#snippet-choices)
 
 [FossID]: https://fossid.com
 [ScanOSS]: https://www.scanoss.com

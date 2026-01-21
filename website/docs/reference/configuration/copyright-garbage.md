@@ -50,12 +50,12 @@ docker run ghcr.io/oss-review-toolkit/ort report \
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/config/CopyrightGarbage.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/CopyrightGarbage.kt)
-- Examples
-  - [examples/copyright-garbage.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/copyright-garbage.yml)
-  - [copyright-garbage.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/copyright-garbage.yml)
-- How-to guides
-  - [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
-- Reference
-  - [Helper CLI --input-copyright-garbage-file and --output-copyright-garbage-file commands](../cli/orth.md#commands)
+* Code
+  * [model/src/main/kotlin/config/CopyrightGarbage.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/CopyrightGarbage.kt)
+* Examples
+  * [examples/copyright-garbage.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/copyright-garbage.yml)
+  * [copyright-garbage.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/copyright-garbage.yml)
+* How-to guides
+  * [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
+* Reference
+  * [Helper CLI --input-copyright-garbage-file and --output-copyright-garbage-file commands](../cli/orth.md#commands)

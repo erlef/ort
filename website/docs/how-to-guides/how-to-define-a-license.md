@@ -2,8 +2,8 @@
 
 You can add custom licenses to ORT to cover cases such as:
 
-- Defining the license(s) used by your organization.
-- Adding a license that a scanner (e.g., [ScanCode]) does not yet recognize.
+* Defining the license(s) used by your organization.
+* Adding a license that a scanner (e.g., [ScanCode]) does not yet recognize.
 
 ⚠️ Defining a license because a scanner didn't detect it should be a stop-gap.
 Report the license to the scanner's creator so it can be added to the tool's detection.
@@ -74,17 +74,18 @@ cli/build/install/ort/bin/ort report
 ```
 
 ## Related resources
-- Code
-  - [src/main/kotlin/DirLicenseFactProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/license-fact-providers/dir/src/main/kotlin/DirLicenseFactProvider.kt)
-  - [model/src/main/resources/reference.yml][reference-yml]
-- Examples
-  - [custom-license-texts/ within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/custom-license-texts)
-  - [license-classifications.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
-  - ['licenseFactProviders' in src/main/resources/reference.yml](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/resources/reference.yml)
-- Reference
-  - [ORT configuration custom license text directory](../reference/configuration/index.md#custom-license-texts-directory)
-  - [License classifications][license-classifications]
-  - [ORT Reporter CLI --custom-license-texts-dir option](../reference/cli/reporter.md#options)
+
+* Code
+  * [src/main/kotlin/DirLicenseFactProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/license-fact-providers/dir/src/main/kotlin/DirLicenseFactProvider.kt)
+  * [model/src/main/resources/reference.yml][reference-yml]
+* Examples
+  * [custom-license-texts/ within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/custom-license-texts)
+  * [license-classifications.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/license-classifications.yml)
+  * ['licenseFactProviders' in src/main/resources/reference.yml](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/resources/reference.yml)
+* Reference
+  * [ORT configuration custom license text directory](../reference/configuration/index.md#custom-license-texts-directory)
+  * [License classifications][license-classifications]
+  * [ORT Reporter CLI --custom-license-texts-dir option](../reference/cli/reporter.md#options)
 
 [license-classifications]: ../reference/configuration/license-classifications.md
 [reference-yml]: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/resources/reference.yml

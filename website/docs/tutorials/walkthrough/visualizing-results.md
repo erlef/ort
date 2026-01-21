@@ -26,10 +26,10 @@ Note that we no longer need to mount the project directory, the reporter only ne
 
 New options compared to the analyzer command:
 
-| Option | Description |
-|--------|-------------|
-| `--ort-file` | The ORT result file to generate reports from |
-| `--report-formats` | Which report format(s) to generate |
+| Option             | Description                                  |
+| ------------------ | -------------------------------------------- |
+| `--ort-file`       | The ORT result file to generate reports from |
+| `--report-formats` | Which report format(s) to generate           |
 
 You should see output like this:
 
@@ -53,9 +53,9 @@ Open `ort-output/scan-report-web-app.html` in your browser.
 
 The Summary tab shows an overview of the analysis:
 
-- **Scanned project**: The Git repository and revision that was analyzed
-- **Dependencies found**: 14 unique dependencies within 1 scope across 7 dependency levels
-- **Declared licenses**: 3 different licenses declared by the packages
+* **Scanned project**: The Git repository and revision that was analyzed
+* **Dependencies found**: 14 unique dependencies within 1 scope across 7 dependency levels
+* **Declared licenses**: 3 different licenses declared by the packages
 
 The table at the bottom will show more information once we run the scanner and evaluator.
 
@@ -77,10 +77,10 @@ The Tree tab shows the same information hierarchically, so you can see how depen
 
 When you click on a package, you'll see:
 
-- **Package identification**: Name, version, PURL, and how to access it (VCS/artifacts)
-- **Metadata**: Authors and other package information
-- **Licenses**: What licenses are declared for this package
-- **Paths**: How this dependency is included in your project (the transitive dependency chain)
+* **Package identification**: Name, version, PURL, and how to access it (VCS/artifacts)
+* **Metadata**: Authors and other package information
+* **Licenses**: What licenses are declared for this package
+* **Paths**: How this dependency is included in your project (the transitive dependency chain)
 
 ## What's missing
 
@@ -92,10 +92,10 @@ Now that we can visualize our results, let's continue to the [Scanner] to [detec
 
 ## Related resources
 
-- How-to guides
-  - [How to generate SBOMs - whether CycloneDX or SPDX](../../how-to-guides/how-to-generate-sboms.md)
-- Reference
-  - [Reporter CLI](../../reference/cli/reporter.md)
+* How-to guides
+  * [How to generate SBOMs - whether CycloneDX or SPDX](../../how-to-guides/how-to-generate-sboms.md)
+* Reference
+  * [Reporter CLI](../../reference/cli/reporter.md)
 
 [advisor]: ../../reference/cli/advisor.md
 [analyzer]: ../../reference/cli/analyzer.md

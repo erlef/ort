@@ -55,8 +55,8 @@ Ensure the `.gitconfig` file exists before running the command.
 
 ## Related resources
 
-- Getting Started
-  - [Docker](../getting-started/docker.md)
-- Reference
-  - [Downloader CLI](../reference/cli/downloader.md)
-  - [Scanner CLI](../reference/cli/scanner.md)
+* Getting Started
+  * [Docker](../getting-started/docker.md)
+* Reference
+  * [Downloader CLI](../reference/cli/downloader.md)
+  * [Scanner CLI](../reference/cli/scanner.md)

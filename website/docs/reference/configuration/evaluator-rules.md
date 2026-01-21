@@ -11,7 +11,7 @@ The `evaluator.rules.kts` file uses a Kotlin-based DSL. See the [Automate your P
 When a rules script is executed, ORT provides several variables that give access to the scan results and configuration:
 
 | Variable | Type | Description |
-|----------|------|-------------|
+| -------- | ---- | ----------- |
 | `ortResult` | [`OrtResult`][OrtResult] | The complete ORT result containing analyzer, scanner, and advisor results |
 | `licenseInfoResolver` | [`LicenseInfoResolver`][LicenseInfoResolver] | Resolves license information for packages, combining declared, concluded, and detected licenses |
 | `resolutionProvider` | [`ResolutionProvider`][ResolutionProvider] | Provides resolutions for issues and rule violations from configuration |
@@ -23,12 +23,12 @@ When a rules script is executed, ORT provides several variables that give access
 
 The following packages are automatically imported and available in rules scripts:
 
-- `org.ossreviewtoolkit.evaluator.*` - Rule DSL classes and functions
-- `org.ossreviewtoolkit.model.*` - ORT data model classes
-- `org.ossreviewtoolkit.model.config.*` - Configuration classes
-- `org.ossreviewtoolkit.model.licenses.*` - License-related classes
-- `org.ossreviewtoolkit.model.utils.*` - Utility classes
-- `org.ossreviewtoolkit.utils.spdx.*` - SPDX license expression utilities
+* `org.ossreviewtoolkit.evaluator.*` - Rule DSL classes and functions
+* `org.ossreviewtoolkit.model.*` - ORT data model classes
+* `org.ossreviewtoolkit.model.config.*` - Configuration classes
+* `org.ossreviewtoolkit.model.licenses.*` - License-related classes
+* `org.ossreviewtoolkit.model.utils.*` - Utility classes
+* `org.ossreviewtoolkit.utils.spdx.*` - SPDX license expression utilities
 
 ## Helper functions
 
@@ -45,7 +45,7 @@ ruleViolations += ruleSet.violations
 ```
 
 | Parameter | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | `ortResult` | The ORT result to evaluate |
 | `licenseInfoResolver` | Resolver for license information (optional, defaults to one created from ortResult) |
 | `resolutionProvider` | Provider for resolutions (optional, defaults to empty) |
@@ -56,7 +56,7 @@ ruleViolations += ruleSet.violations
 The DSL supports four rule types:
 
 | Rule Type | Scope | Use Case |
-|-----------|-------|----------|
+| --------- | ----- | -------- |
 | [`packageRule`][PackageRule] | Each package and project | License checks, vulnerability checks |
 | [`dependencyRule`][DependencyRule] | Each dependency in the tree | Dependency-level license checks with context |
 | [`projectSourceRule`][ProjectSourceRule] | Once, with source access | Repository structure checks (README, CI config) |
@@ -79,7 +79,7 @@ packageRule("RULE_NAME") {
 [`LicenseView`][LicenseView] determines which license sources to consider:
 
 | View | Description |
-|------|-------------|
+| ---- | ----------- |
 | `ALL` | All licenses from all sources |
 | `ONLY_CONCLUDED` | Only concluded licenses |
 | `ONLY_DECLARED` | Only declared licenses from package metadata |
@@ -101,7 +101,7 @@ require {
 ### Package rule matchers
 
 | Matcher | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `isExcluded()` | Package is excluded via .ort.yml |
 | `hasLicense()` | Package has any license |
 | `hasConcludedLicense()` | Package has a concluded license |
@@ -117,7 +117,7 @@ require {
 In addition to package rule matchers:
 
 | Matcher | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `isAtTreeLevel(level)` | Dependency is at specified tree depth (0 = direct) |
 | `isStaticallyLinked()` | Dependency uses static linkage |
 | `isProjectFromOrg(vararg names)` | Parent project belongs to specified organization(s) |
@@ -125,14 +125,14 @@ In addition to package rule matchers:
 ### License rule matchers
 
 | Matcher | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `isExcluded()` | License finding is excluded |
 | `isSpdxLicense()` | License is a valid SPDX license (not a LicenseRef) |
 
 ### Project source rule matchers
 
 | Matcher | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `projectSourceHasFile(vararg patterns)` | Project has files matching glob patterns |
 | `projectSourceHasDirectory(vararg patterns)` | Project has directories matching patterns |
 | `projectSourceHasFileWithContent(regex, vararg patterns)` | Files matching patterns contain content matching regex |
@@ -216,32 +216,32 @@ docker run ghcr.io/oss-review-toolkit/ort evaluate \
 
 ## Related resources
 
-- Code
-  - Evaluator DSL
-    - [RuleSet.kt][RuleSet] - Rule set container and `ruleSet()` function
-    - [PackageRule.kt][PackageRule] - Package rule implementation and matchers
-    - [DependencyRule.kt][DependencyRule] - Dependency rule implementation and matchers
-    - [ProjectSourceRule.kt][ProjectSourceRule] - Project source rule implementation and matchers
-    - [OrtResultRule.kt][OrtResultRule] - ORT result rule implementation
-    - [RuleMatcher.kt][RuleMatcher] - Matcher interface and combinators
-    - [RulesScriptTemplate.kt][RulesScriptTemplate] - Script context and imports
-  - Model classes
-    - [OrtResult.kt][OrtResult] - ORT result data model
-    - [LicenseInfoResolver.kt][LicenseInfoResolver] - License information resolver
-    - [LicenseClassifications.kt][LicenseClassifications] - License classifications model
-    - [LicenseView.kt][LicenseView] - License view filtering
-    - [ResolutionProvider.kt][ResolutionProvider] - Resolution provider interface
-    - [RuleViolation.kt][RuleViolation] - Rule violation model
-    - [Severity.kt][Severity] - Severity levels
-- Examples
-  - [examples/example.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.rules.kts)
-  - [evaluator/src/main/resources/rules/osadl.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/resources/rules/osadl.rules.kts)
-  - [evaluator.rules.kts within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
-- Reference
-  - [Evaluator CLI](../cli/evaluator.md)
-  - [License classifications](license-classifications.md)
-- Tutorials
-  - [Automating policy checks](../../tutorials/automating-policy-checks.md) - Step-by-step guide for writing evaluator policy rules
+* Code
+  * Evaluator DSL
+    * [RuleSet.kt][RuleSet] - Rule set container and `ruleSet()` function
+    * [PackageRule.kt][PackageRule] - Package rule implementation and matchers
+    * [DependencyRule.kt][DependencyRule] - Dependency rule implementation and matchers
+    * [ProjectSourceRule.kt][ProjectSourceRule] - Project source rule implementation and matchers
+    * [OrtResultRule.kt][OrtResultRule] - ORT result rule implementation
+    * [RuleMatcher.kt][RuleMatcher] - Matcher interface and combinators
+    * [RulesScriptTemplate.kt][RulesScriptTemplate] - Script context and imports
+  * Model classes
+    * [OrtResult.kt][OrtResult] - ORT result data model
+    * [LicenseInfoResolver.kt][LicenseInfoResolver] - License information resolver
+    * [LicenseClassifications.kt][LicenseClassifications] - License classifications model
+    * [LicenseView.kt][LicenseView] - License view filtering
+    * [ResolutionProvider.kt][ResolutionProvider] - Resolution provider interface
+    * [RuleViolation.kt][RuleViolation] - Rule violation model
+    * [Severity.kt][Severity] - Severity levels
+* Examples
+  * [examples/example.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/examples/example.rules.kts)
+  * [evaluator/src/main/resources/rules/osadl.rules.kts](https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/resources/rules/osadl.rules.kts)
+  * [evaluator.rules.kts within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/evaluator.rules.kts)
+* Reference
+  * [Evaluator CLI](../cli/evaluator.md)
+  * [License classifications](license-classifications.md)
+* Tutorials
+  * [Automating policy checks](../../tutorials/automating-policy-checks.md) - Step-by-step guide for writing evaluator policy rules
 
 [RuleSet]: https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/kotlin/RuleSet.kt
 [PackageRule]: https://github.com/oss-review-toolkit/ort/blob/main/evaluator/src/main/kotlin/PackageRule.kt

@@ -21,8 +21,8 @@ Unlike excludes, includes only support paths (not scopes).
 
 ## Related resources
 
-- Reference
-  - [Repository configuration (.ort.yml)][ort-yml]
+* Reference
+  * [Repository configuration (.ort.yml)][ort-yml]
 
 [ort-yml]: ../reference/configuration/ort-yml.md
 [ort-yml-path-includes]: ../reference/configuration/ort-yml.md#path-includes

@@ -4,7 +4,6 @@ ORT supports two ways to get license texts: [License Fact Providers](#license-fa
 
 Several ORT reporters can include license texts in their output. For instance, the [PlainTextTemplateReporter](reporter-templates.md#plain-text-templates) can incorporate license texts into the generated attribution / open source notices.
 
-
 ## License fact providers
 
 ORT includes multiple license fact provider plugins that can retrieve license texts from various sources.
@@ -21,9 +20,9 @@ ort:
 License fact providers are queried in the order they are defined in the configuration file.
 By default, ORT uses the following license fact providers:
 
-- [SPDX License Fact Provider](../plugins/license-fact-providers/SPDX%20License%20Fact%20Provider.md): Provides bundled license texts for all [SPDX licenses](https://spdx.org/licenses/).
-- [ScanCode License Fact Provider](../plugins/license-fact-providers/ScanCode%20License%20Fact%20Provider.md): Provides license texts from a local ScanCode installation.
-- [Default Directory License Fact Provider](../plugins/license-fact-providers/Default%20Directory%20License%20Fact%20Provider.md): Provides license texts from files the `$ORT_CONFIG_DIR/custom-license-texts` directory.
+* [SPDX License Fact Provider](../plugins/license-fact-providers/SPDX%20License%20Fact%20Provider.md): Provides bundled license texts for all [SPDX licenses](https://spdx.org/licenses/).
+* [ScanCode License Fact Provider](../plugins/license-fact-providers/ScanCode%20License%20Fact%20Provider.md): Provides license texts from a local ScanCode installation.
+* [Default Directory License Fact Provider](../plugins/license-fact-providers/Default%20Directory%20License%20Fact%20Provider.md): Provides license texts from files the `$ORT_CONFIG_DIR/custom-license-texts` directory.
 
 The latter can be used to add license texts for licenses that are not provided by the other license fact providers.
 The files must be named according to the license identifier; see for instance `LicenseRef-ort-SAP-Developer-License-Agreement-3.1`. in below linked [custom-license-texts example](#related-resources).
@@ -53,7 +52,7 @@ See the [`reference.yml`][reference-yml] for more examples of how to configure f
 
 #### License File Patterns
 
-To decide which files to archive, ORT has a [predefined set of license file patterns][LicenseFilePatterns.kt].
+To decide which files to archive, ORT has a [predefined set of license file patterns][LicenseFilePatterns].
 To overwrite these patterns, you can add the `licenseFilePatterns` section to the `config.yml` file:
 
 ```yaml
@@ -76,17 +75,17 @@ This example uses the following algorithm when including license texts for depen
 
 ## Related resources
 
-- Code
-  - [model/src/main/kotlin/config/LicenseFilePatterns.kt][LicenseFilePatterns]
-  - [model/src/main/kotlin/config/S3FileStorageConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/S3FileStorageConfiguration.kt)
-  - [plugins/license-fact-providers/api/src/main/kotlin/LicenseFactProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/license-fact-providers/api/src/main/kotlin/LicenseFactProvider.kt)
-  - [utils/ort/src/main/kotlin/storage](https://github.com/oss-review-toolkit/ort/tree/main/utils/ort/src/main/kotlin/storage)
-- Examples
-  - [custom-license-texts directory within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/custom-license-texts)
-- How-to guides
-  - [How to define a license](../../how-to-guides/how-to-define-a-license.md)
-- Reference
-  - [Reporter CLI](../cli/reporter.md#configuration-options)
+* Code
+  * [model/src/main/kotlin/config/LicenseFilePatterns.kt][LicenseFilePatterns]
+  * [model/src/main/kotlin/config/S3FileStorageConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/S3FileStorageConfiguration.kt)
+  * [plugins/license-fact-providers/api/src/main/kotlin/LicenseFactProvider.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/license-fact-providers/api/src/main/kotlin/LicenseFactProvider.kt)
+  * [utils/ort/src/main/kotlin/storage](https://github.com/oss-review-toolkit/ort/tree/main/utils/ort/src/main/kotlin/storage)
+* Examples
+  * [custom-license-texts directory within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/tree/main/custom-license-texts)
+* How-to guides
+  * [How to define a license](../../how-to-guides/how-to-define-a-license.md)
+* Reference
+  * [Reporter CLI](../cli/reporter.md#configuration-options)
 
 [LicenseFilePatterns]: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/LicenseFilePatterns.kt
 [NOTICE_DEFAULT-ftl]: https://github.com/oss-review-toolkit/ort/blob/main/plugins/reporters/freemarker/src/main/resources/templates/plain-text/NOTICE_DEFAULT.ftl

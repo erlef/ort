@@ -3,10 +3,11 @@
 License policy violations occur when ORT finds licenses that are in compliant with your policy rules.
 
 Common causes include:
-- **Scanner found licenses in files you don't distribute** (tests, build scripts, examples)
-- **Scanner misidentified a license** (uncertain match or false positive from similar text)
-- **License isn't in your policy yet** (new dependency with an unhandled license)
-- **Scanned sources don't match what you release** (monorepo, bundled deps, extra files)
+
+* **Scanner found licenses in files you don't distribute** (tests, build scripts, examples)
+* **Scanner misidentified a license** (uncertain match or false positive from similar text)
+* **License isn't in your policy yet** (new dependency with an unhandled license)
+* **Scanned sources don't match what you release** (monorepo, bundled deps, extra files)
 
 Follow this flowchart to identify the appropriate fix.
 
@@ -112,17 +113,17 @@ resolutions:
 
 ## Related resources
 
-- How-to guides
-  - [How to add non-detected packages][how-to-add-packages]
-  - [How to address tool issues][how-to-tool-issues]
-  - [How to correct licenses][how-to-correct-licenses]
-  - [How to exclude dirs, files, or scopes][how-to-exclude]
-  - [How to make a license choice][how-to-license-choice]
-- Reference
-  - [Package configurations][package-configurations]
-  - [Package curations][package-curations]
-  - [Repository configuration (.ort.yml)][ort-yml]
-  - [Resolutions][resolutions]
+* How-to guides
+  * [How to add non-detected packages][how-to-add-packages]
+  * [How to address tool issues][how-to-tool-issues]
+  * [How to correct licenses][how-to-correct-licenses]
+  * [How to exclude dirs, files, or scopes][how-to-exclude]
+  * [How to make a license choice][how-to-license-choice]
+* Reference
+  * [Package configurations][package-configurations]
+  * [Package curations][package-curations]
+  * [Repository configuration (.ort.yml)][ort-yml]
+  * [Resolutions][resolutions]
 
 [how-to-add-packages]: how-to-add-non-detected-or-supported-packages.md
 [how-to-correct-licenses]: how-to-correct-licenses.md

@@ -27,9 +27,9 @@ resolutions:
 
 ## Related resources
 
-- Reference
-  - [Advisor CLI][advisor]
-  - [Resolutions][resolutions]
+* Reference
+  * [Advisor CLI][advisor]
+  * [Resolutions][resolutions]
 
 [advisor]: ../reference/cli/advisor.md
 [resolutions]: ../reference/configuration/resolutions.md

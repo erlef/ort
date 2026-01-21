@@ -19,23 +19,23 @@ ort analyze [<options>]
 
 ## Input Options
 
-- `-i`, `--input-dir=<value>` - The project directory to analyze. May point to a definition file, but only if just a single package manager is enabled, and the definition file does not depend on any further definition files.
+* `-i`, `--input-dir=<value>` - The project directory to analyze. May point to a definition file, but only if just a single package manager is enabled, and the definition file does not depend on any further definition files.
 
 ## Output Options
 
-- `-o`, `--output-dir=<value>`: The directory to write the ORT result file with analyzer results to.
-- `-f`, `--output-formats=(JSON|YAML)`: The list of output formats to be used for the ORT result file(s). (default: YAML)
+* `-o`, `--output-dir=<value>`: The directory to write the ORT result file with analyzer results to.
+* `-f`, `--output-formats=(JSON|YAML)`: The list of output formats to be used for the ORT result file(s). (default: YAML)
 
 ## Configuration Options
 
-- `--repository-configuration-file=<value>`: A file containing the repository configuration. If set, overrides any repository configuration contained in a '.ort.yml' file in the repository.
-- `--resolutions-file=<value>`: A file containing issue and rule violation resolutions. (default: ~/.ort/config/resolutions.yml)
+* `--repository-configuration-file=<value>`: A file containing the repository configuration. If set, overrides any repository configuration contained in a '.ort.yml' file in the repository.
+* `--resolutions-file=<value>`: A file containing issue and rule violation resolutions. (default: ~/.ort/config/resolutions.yml)
 
 ## Options
 
-- `-l`, `--label=<value>`: Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
-- `--dry-run`: Do not actually run the project analysis but only show the package managers that would be used.
-- `-h`, `--help`: Show this message and exit.
+* `-l`, `--label=<value>`: Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
+* `--dry-run`: Do not actually run the project analysis but only show the package managers that would be used.
+* `-h`, `--help`: Show this message and exit.
 
 ## Supported package managers
 
@@ -91,12 +91,12 @@ If another package manager that is not part of the list above is used (or no pac
 
 ## Related resources
 
-- Code
-  - [plugins/commands/analyzer/src/main/kotlin/AnalyzeCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/analyzer/src/main/kotlin/AnalyzeCommand.kt)
-- How-to guides
-  - [How to exclude dirs, files or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
-  - [How to include dirs and files](../../how-to-guides/how-to-include-dirs-and-files.md)
-  - [How to add non-detected or supported packages](../../how-to-guides/how-to-add-non-detected-or-supported-packages.md)
-  - [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
-- Tutorials
-  - [Analyzing a project for dependencies](../../tutorials/walkthrough/analyzing-a-project-for-dependencies.md)
+* Code
+  * [plugins/commands/analyzer/src/main/kotlin/AnalyzeCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/analyzer/src/main/kotlin/AnalyzeCommand.kt)
+* How-to guides
+  * [How to exclude dirs, files or scopes](../../how-to-guides/how-to-exclude-dirs-files-or-scopes.md)
+  * [How to include dirs and files](../../how-to-guides/how-to-include-dirs-and-files.md)
+  * [How to add non-detected or supported packages](../../how-to-guides/how-to-add-non-detected-or-supported-packages.md)
+  * [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
+* Tutorials
+  * [Analyzing a project for dependencies](../../tutorials/walkthrough/analyzing-a-project-for-dependencies.md)

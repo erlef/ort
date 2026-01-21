@@ -24,22 +24,22 @@ ort scan [<options>]
 
 ## Output Options
 
-- `-o`, `--output-dir=<value>` - The directory to write the ORT result file with scan results to.
-- `-f`, `--output-formats=(JSON|YAML)` - The list of output formats to be used for the ORT result file(s). (default: YAML)
+* `-o`, `--output-dir=<value>` - The directory to write the ORT result file with scan results to.
+* `-f`, `--output-formats=(JSON|YAML)` - The list of output formats to be used for the ORT result file(s). (default: YAML)
 
 ## Configuration Options
 
-- `--resolutions-file=<value>` - A file containing issue and rule violation resolutions. (default: ~/tsteenbe/.ort/config/resolutions.yml)
+* `--resolutions-file=<value>` - A file containing issue and rule violation resolutions. (default: ~/tsteenbe/.ort/config/resolutions.yml)
 
 ## Options
 
-- `-i`, `--ort-file=<value>` - An ORT result file with an analyzer result to use. Source code is downloaded automatically if needed.
-- `-l`, `--label=<value>` - Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
-- `-s`, `--scanners=<value>` - A comma-separated list of scanners to use. Possible values are: [Askalono, DOS, FossId, Licensee, ScanCode, SCANOSS] (default: ScanCode)
-- `--project-scanners=<value>` - A comma-separated list of scanners to use for scanning the source code of projects. By default, projects and packages are scanned with the same scanners as specified by `--scanners`. Possible values are: [Askalono, DOS, FossId, Licensee, ScanCode, SCANOSS]
-- `--package-types=(PACKAGE|PROJECT)` - A comma-separated list of the package types from the ORT file's analyzer result to limit scans to. (default: [PACKAGE, PROJECT])
-- `--skip-excluded` - Do not scan excluded projects or packages. Works only with the `--ort-file` parameter. (deprecated)
-- `-h`, `--help` - Show this message and exit.
+* `-i`, `--ort-file=<value>` - An ORT result file with an analyzer result to use. Source code is downloaded automatically if needed.
+* `-l`, `--label=<value>` - Set a label in the ORT result, overwriting any existing label of the same name. Can be used multiple times. For example: `--label distribution=external`.
+* `-s`, `--scanners=<value>` - A comma-separated list of scanners to use. Possible values are: [Askalono, DOS, FossId, Licensee, ScanCode, SCANOSS] (default: ScanCode)
+* `--project-scanners=<value>` - A comma-separated list of scanners to use for scanning the source code of projects. By default, projects and packages are scanned with the same scanners as specified by `--scanners`. Possible values are: [Askalono, DOS, FossId, Licensee, ScanCode, SCANOSS]
+* `--package-types=(PACKAGE|PROJECT)` - A comma-separated list of the package types from the ORT file's analyzer result to limit scans to. (default: [PACKAGE, PROJECT])
+* `--skip-excluded` - Do not scan excluded projects or packages. Works only with the `--ort-file` parameter. (deprecated)
+* `-h`, `--help` - Show this message and exit.
 
 ## Storage backends configurations
 
@@ -170,16 +170,17 @@ ort:
 
 ## Related resources
 
-- Code
-  - [plugins/commands/scanner/src/main/kotlin/ScanCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/scanner/src/main/kotlin/ScanCommand.kt)
-  - [model/src/main/kotlin/config/ScanStorageConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScanStorageConfiguration.kt)
-- How-to guides
-  - [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
-  - [How to correct copyrights](../../how-to-guides/how-to-correct-copyrights.md)
-  - [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
-  - [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
-- Tutorials
-  - [Scanning for copyrights and licenses](../../tutorials/walkthrough/scanning-for-copyrights-and-licenses.md)
+* Code
+  * [plugins/commands/scanner/src/main/kotlin/ScanCommand.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/commands/scanner/src/main/kotlin/ScanCommand.kt)
+  * [model/src/main/kotlin/config/ScanStorageConfiguration.kt](https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScanStorageConfiguration.kt)
+* How-to guides
+  * [How to correct licenses](../../how-to-guides/how-to-correct-licenses.md)
+  * [How to correct copyrights](../../how-to-guides/how-to-correct-copyrights.md)
+  * [How to make snippet choices](../../how-to-guides/how-to-make-snippet-choices.md)
+  * [How to address tool issues](../../how-to-guides/how-to-address-tool-issues.md)
+* Tutorials
+  * [Scanning for copyrights and licenses](../../tutorials/walkthrough/scanning-for-copyrights-and-licenses.md)
 
 [analyzer]: analyzer.md
 [downloader]: downloader.md
+[reference-yml]: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/resources/reference.yml

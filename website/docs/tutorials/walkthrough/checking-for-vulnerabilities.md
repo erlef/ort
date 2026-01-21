@@ -20,8 +20,8 @@ docker run --rm \
 
 New options:
 
-| Option | Description |
-|--------|-------------|
+| Option       | Description                                                          |
+| ------------ | -------------------------------------------------------------------- |
 | `--advisors` | Which vulnerability database(s) to query (OSV, VulnerableCode, etc.) |
 
 You should see output like this:
@@ -73,10 +73,10 @@ We now have a complete picture of our project: dependencies, licenses, and vulne
 
 ## Related resources
 
-- How-to guides
-  - [How to check and remediate vulnerabilities](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
-- Reference
-  - [Advisor CLI][advisor]
+* How-to guides
+  * [How to check and remediate vulnerabilities](../../how-to-guides/how-to-check-and-remediate-vulnerabilities-in-dependencies.md)
+* Reference
+  * [Advisor CLI][advisor]
 
 [advisor]: ../../reference/cli/advisor.md
 [evaluator]: ../../reference/cli/evaluator.md

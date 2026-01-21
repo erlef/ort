@@ -4,7 +4,7 @@ Reporter templates allow you use ORT results in a format you define.
 
 ## Custom reports using AsciiDoc templates
 
-The AsciiDoc template reporters generate reports using a combination of [Apache Freemarker][Freemarker] templates and [AsciiDoc][AsciiDoc], with [AsciidoctorJ][AsciidoctorJ] serving as the Java interface and [AsciidoctorJ PDF][AsciidoctorJ-PDF] functioning as the PDF file generator for the [PDF Template Reporter](#pdf). For each provided Freemarker template using the options outlined below, a separate intermediate file is created that can be processed by AsciidoctorJ.
+The AsciiDoc template reporters generate reports using a combination of [Apache Freemarker][Freemarker] templates and [AsciiDoc][AsciiDoc], with [AsciidoctorJ][AsciidoctorJ] serving as the Java interface and [AsciidoctorJ PDF][AsciidoctorJ-PDF] functioning as the PDF file generator for the [PDF Template Reporter](#generate-a-pdf). For each provided Freemarker template using the options outlined below, a separate intermediate file is created that can be processed by AsciidoctorJ.
 
 ### Reporter options
 
@@ -113,7 +113,7 @@ ORT provides two templates that can be used as a base for creating your custom a
 
 See the code comments within the templates for detailed explanations of how they work.
 
-#### Command line
+### Command line
 
 To use one or both of the provided templates pass the `template.id`s to the *PlainTextTemplate* reporter:
 
@@ -149,15 +149,15 @@ The `template.id` and `template.path` options can be combined to generate multip
 
 ## Related resources
 
-- Code
-  - [plugins/reporters/asciidoc/src/main/kotlin](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/asciidoc/src/main/kotlin)
-  - [plugins/reporters/freemarker/src/main/kotlin/FreemarkerTemplateProcessor.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/reporters/freemarker/src/main/kotlin/FreemarkerTemplateProcessor.kt)
-  - [plugins/reporters/freemarker/src/main/kotlin/PlainTextTemplateReporter.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/reporters/freemarker/src/main/kotlin/PlainTextTemplateReporter.kt)
-- Examples
-  - [examples/asciidoctor-pdf-theme.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/asciidoctor-pdf-theme.yml)
-  - [asciidoctor-pdf-theme.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/asciidoctor-pdf-theme.yml)
-- Reference
-  - [Reporter CLI --report-formats option](../cli/reporter.md#configuration-options)
+* Code
+  * [plugins/reporters/asciidoc/src/main/kotlin](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/asciidoc/src/main/kotlin)
+  * [plugins/reporters/freemarker/src/main/kotlin/FreemarkerTemplateProcessor.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/reporters/freemarker/src/main/kotlin/FreemarkerTemplateProcessor.kt)
+  * [plugins/reporters/freemarker/src/main/kotlin/PlainTextTemplateReporter.kt](https://github.com/oss-review-toolkit/ort/blob/main/plugins/reporters/freemarker/src/main/kotlin/PlainTextTemplateReporter.kt)
+* Examples
+  * [examples/asciidoctor-pdf-theme.yml](https://github.com/oss-review-toolkit/ort/blob/main/examples/asciidoctor-pdf-theme.yml)
+  * [asciidoctor-pdf-theme.yml within the ort-config repository](https://github.com/oss-review-toolkit/ort-config/blob/main/asciidoctor-pdf-theme.yml)
+* Reference
+  * [Reporter CLI --report-formats option](../cli/reporter.md#configuration-options)
 
 [AsciiDoc]: https://asciidoc.org
 [Asciidoctor-docbook]: https://docs.asciidoctor.org/asciidoctor/latest/docbook-backend

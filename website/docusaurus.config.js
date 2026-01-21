@@ -55,9 +55,9 @@ const config = {
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        }
-      })
-    ]
+        },
+      }),
+    ],
   ],
 
   themes: [
@@ -71,9 +71,9 @@ const config = {
         searchResultLimits: 15,
         searchResultContextMaxLength: 200,
         explicitSearchResultPath: true,
-      }
+      },
     ],
-    '@docusaurus/theme-mermaid'
+    '@docusaurus/theme-mermaid',
   ],
 
   themeConfig:
@@ -104,8 +104,8 @@ const config = {
             href: 'https://github.com/oss-review-toolkit/ort',
             label: 'GitHub',
             position: 'right',
-          }
-        ]
+          },
+        ],
       },
       footer: {
         style: 'dark',
@@ -124,8 +124,8 @@ const config = {
               {
                 label: 'Search',
                 to: '/search',
-              }
-            ]
+              },
+            ],
           },
           {
             title: 'Community',
@@ -137,8 +137,8 @@ const config = {
               {
                 label: 'Slack',
                 href: 'http://slack.oss-review-toolkit.org',
-              }
-            ]
+              },
+            ],
           },
           {
             title: 'More',
@@ -146,9 +146,9 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/oss-review-toolkit/ort',
-              }
-            ]
-          }
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/oss-review-toolkit/ort/graphs/contributors">The ORT Project Copyright Holders</a>.
                     Built with <a href="https://docusaurus.io">Docusaurus</a>.`,
@@ -157,7 +157,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'batch'],
-      }
+      },
     }),
 };
 
